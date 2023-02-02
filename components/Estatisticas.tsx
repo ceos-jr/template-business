@@ -8,7 +8,7 @@ const Estatisticas = () => {
           <p className="w-full font-light uppercase">Lorem fodase kkkkk</p>
           <h1 className="w-full text-4xl font-bold">
             Our solutions for your{" "}
-            <span className="text-lime-400">business growth</span>
+            <span className="text-primary-400">business growth</span>
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse

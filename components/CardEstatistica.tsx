@@ -16,7 +16,7 @@ const CardEstatistica = ({ number, name, speed }: CardEstatisticaProps) => {
         clearInterval(interval);
         return;
       }
-      setValue(value + 1);
+      setValue(value + 5);
     }, 10 / speed);
 
     return () => {
@@ -26,7 +26,7 @@ const CardEstatistica = ({ number, name, speed }: CardEstatisticaProps) => {
 
   return (
     <div className="flex flex-col gap-4 justify-center items-center p-8 font-bold rounded-lg backdrop-blur-md bg-white/10">
-      <h1 className="text-5xl text-lime-500">{value}</h1>
+      <h1 className="text-5xl text-primary-500">{value}</h1>
       <h2 className="text-xl">{name}</h2>
     </div>
   );

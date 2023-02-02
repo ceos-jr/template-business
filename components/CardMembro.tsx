@@ -16,7 +16,7 @@ interface CardMembroProps {
 const MediaLink = ({ Icon, link }: { Icon: IconType; link: string }) => {
   return (
     <a href={link}>
-      <Icon className="p-1 text-lime-400 rounded-lg border-2 border-lime-400 transition-all duration-500 cursor-pointer hover:text-white hover:bg-lime-400" />
+      <Icon className="p-1 rounded-lg border-2 transition-all duration-500 cursor-pointer hover:text-white text-primary-400 border-primary-400 hover:bg-primary-400" />
     </a>
   );
 };
