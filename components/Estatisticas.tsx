@@ -1,4 +1,5 @@
 import CardEstatistica from "./CardEstatistica";
+import Button from "./Button";
 
 const Estatisticas = () => {
   return (
@@ -17,6 +18,7 @@ const Estatisticas = () => {
             urna semper, faucibus elit vel, ornare ipsum. Nullam lorem est,
             vulputate sit amet lorem eget, gravida sagittis ex.
           </p>
+          <Button type="primary">Contact us</Button>
         </div>
         <div className="grid grid-cols-1 gap-12 text-white md:grid-cols-2 md:grid-rows-2">
           <CardEstatistica number={945} name="Tubias" speed={1} />
