@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import NossosServicos from "../components/NossosServicos";
 import { Inter } from "@next/font/google";
-import Estatisticas from "../components/Estatisticas";
+// import Estatisticas from "../components/Estatisticas";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,11 +14,12 @@ const Home: NextPage = () => {
     <div className={`${inter.variable} flex flex-col items-center font-inter`}>
       <Head>
         <title>Instituto Cactus</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full min-h-screen">
         <NossosServicos />
-        <Estatisticas />
+        {/* <Estatisticas /> */}
       </main>
     </div>
   );
