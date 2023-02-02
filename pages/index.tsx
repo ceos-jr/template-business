@@ -4,6 +4,7 @@ import NossosServicos from "../components/NossosServicos";
 import { Inter } from "@next/font/google";
 import Estatisticas from "../components/Estatisticas";
 import NossoTime from "../components/NossoTime";
+import ProvaSocial from "../components/ProvaSocial";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <main className="w-full min-h-screen">
         <NossosServicos />
         <Estatisticas />
+        <ProvaSocial />
         <NossoTime />
       </main>
     </div>
