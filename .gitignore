@@ -37,3 +37,7 @@ next-env.d.ts
 
 # lock files
 package-lock.json
+
+# nextimage export
+**/nextImageExportOptimizer
+**/next-image-export-optimizer-hashes.json
