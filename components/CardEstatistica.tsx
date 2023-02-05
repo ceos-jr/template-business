@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
+import { Statistic } from "./Estatisticas";
 
-interface CardEstatisticaProps {
-  number: number;
-  name: string;
+export interface StatisticsCardProps extends Statistic {
   speed: number;
 }
-const CardEstatistica = ({ number, name, speed }: CardEstatisticaProps) => {
+const StatisticCard = ({ number, name, speed }: StatisticsCardProps) => {
   const [value, setValue] = useState(0);
 
   useEffect(() => {
@@ -32,4 +31,4 @@ const CardEstatistica = ({ number, name, speed }: CardEstatisticaProps) => {
   );
 };
 
-export default CardEstatistica;
+export default StatisticCard;

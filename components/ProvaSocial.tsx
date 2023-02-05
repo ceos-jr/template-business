@@ -1,5 +1,19 @@
 import CardCliente from "./CardCliente";
 
+export type Client = {
+  name: string;
+  position: string;
+  testament: string;
+};
+
+const clients: Client[] = [
+  {
+    name: "Tubias",
+    position: "Head nos Portulovers",
+    testament: "Si si si mano, mucho legal, gostei mucho mesmo",
+  },
+];
+
 const ProvaSocial = () => {
   return (
     <div className="w-full text-gray-900 bg-gray-200">
@@ -12,11 +26,7 @@ const ProvaSocial = () => {
             Testemunho dos nossos melhores clientes
           </h2>
         </div>
-        <CardCliente
-          name="Tubias"
-          position="Head nos Portulovers"
-          testament="Si si si mano, mucho legal, gostei mucho mesmo"
-        />
+        <CardCliente {...clients[0]} />
       </div>
     </div>
   );

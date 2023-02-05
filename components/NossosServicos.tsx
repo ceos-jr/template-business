@@ -2,7 +2,7 @@ import CardServico from "./CardServico";
 import Service1Img from "../public/images/services/service-1.webp";
 import { StaticImageData } from "next/image";
 
-type Service = {
+export type Service = {
   name: string;
   image: StaticImageData | string;
   description: string;
@@ -42,12 +42,7 @@ const NossosServicos = () => {
       </div>
       <div className="grid grid-cols-1 gap-8 p-12 w-full md:grid-cols-3">
         {services.map((service) => (
-          <CardServico
-            name={service.name}
-            image={service.image}
-            description={service.description}
-            key={service.name}
-          />
+          <CardServico key={service.name} {...service} />
         ))}
       </div>
     </section>

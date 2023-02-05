@@ -2,7 +2,7 @@ import CardMembro from "./CardMembro";
 import { StaticImageData } from "next/image";
 import ConorImg from "../public/images/members/conor.webp";
 
-type Member = {
+export type Member = {
   name: string;
   position: string;
   image?: StaticImageData | string;

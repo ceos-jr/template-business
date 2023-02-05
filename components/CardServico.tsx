@@ -1,11 +1,7 @@
 import ExportedImage from "next-image-export-optimizer";
-import { StaticImageData } from "next/image";
+import { Service } from "./NossosServicos";
 
-interface CardServicoProps {
-  name: string;
-  image: StaticImageData | string;
-  description: string;
-}
+type CardServicoProps = Service;
 
 const CardServico = ({ name, image, description }: CardServicoProps) => {
   return (

@@ -1,12 +1,25 @@
-import CardEstatistica from "./CardEstatistica";
+import StatisticCard, { StatisticsCardProps } from "./CardEstatistica";
 import Button from "./Button";
 
-const Estatisticas = () => {
+export type Statistic = {
+  number: number;
+  name: string;
+  description?: string;
+};
+
+const statistics: StatisticsCardProps[] = [
+  { number: 945, name: "Jobs", speed: 1 },
+  { number: 949, name: "Hours Saved", speed: 1 },
+  { number: 958, name: "Useful thing", speed: 1 },
+  { number: 965, name: "Change", speed: 1 },
+];
+
+const StatisticsSection = () => {
   return (
     <section className="w-full bg-gray-900">
       <div className="container grid grid-cols-1 gap-8 p-8 py-32 mx-auto md:grid-cols-2">
         <div className="flex flex-col gap-12 justify-center items-center text-white">
-          <p className="w-full font-light uppercase">Lorem fodase kkkkk</p>
+          <p className="w-full font-light uppercase">Lorem Ipsum</p>
           <h1 className="w-full text-4xl font-bold">
             Our solutions for your{" "}
             <span className="text-primary-400">business growth</span>
@@ -21,14 +34,13 @@ const Estatisticas = () => {
           <Button type="primary">Contact us</Button>
         </div>
         <div className="grid grid-cols-1 gap-12 text-white md:grid-cols-2 md:grid-rows-2">
-          <CardEstatistica number={945} name="Tubias" speed={1} />
-          <CardEstatistica number={945} name="Tubias" speed={1} />
-          <CardEstatistica number={945} name="Tubias" speed={1} />
-          <CardEstatistica number={945} name="Tubias" speed={1} />
+          {statistics.map((statistic) => (
+            <StatisticCard key={statistic.name} {...statistic} />
+          ))}
         </div>
       </div>
     </section>
   );
 };
 
-export default Estatisticas;
+export default StatisticsSection;

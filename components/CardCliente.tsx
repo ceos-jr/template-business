@@ -1,10 +1,8 @@
-interface CardClienteProps {
-  name: string;
-  position: string;
-  testament: string;
-}
+import { Client } from "./ProvaSocial";
 
-const CardCliente = ({ name, position, testament }: CardClienteProps) => {
+type ClientCardProps = Client;
+
+const CardCliente = ({ name, position, testament }: ClientCardProps) => {
   return (
     <div className="p-4 text-center bg-white rounded-lg shadow-lg">
       <h3 className="text-xl font-bold">{name}</h3>

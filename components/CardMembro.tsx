@@ -2,17 +2,9 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineUser, AiOutlineTwitter } from "react-icons/ai";
 import { IconType } from "react-icons";
 import ExportedImage from "next-image-export-optimizer";
-import { StaticImageData } from "next/image";
+import { Member } from "./NossoTime";
 
-interface CardMembroProps {
-  name: string;
-  position: string;
-  image?: StaticImageData | string;
-  linkedin?: string;
-  instagram?: string;
-  facebook?: string;
-  twitter?: string;
-}
+type CardMembroProps = Member;
 
 const MediaLink = ({ Icon, link }: { Icon: IconType; link: string }) => {
   return (
