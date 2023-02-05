@@ -3,11 +3,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build && next export && next-image-export-optimizer"
   },
   "dependencies": {
     "@next/font": "^13.1.6",
     "next": "latest",
+    "next-image-export-optimizer": "^1.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1"
