@@ -8,6 +8,7 @@ import Services1 from "../components/Services/Services1";
 import StatisticsSection from "../components/Stats/Stats1";
 import Member1 from "../components/Members/Members1";
 import Clients1 from "../components/Clients/Clients1";
+import Footer2 from "../components/Footers/Footer2";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
         <StatisticsSection />
         <Clients1 />
         <Member1 />
+        <Footer2 />
       </main>
     </div>
   );
