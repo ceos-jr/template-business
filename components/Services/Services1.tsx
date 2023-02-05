@@ -1,14 +1,14 @@
-import CardServico from "./CardServico";
-import Service1Img from "../public/images/services/service-1.webp";
+import ServiceCard from "./ServiceCard1";
+import Service1Img from "../../public/images/services/service-1.webp";
 import { StaticImageData } from "next/image";
 
-export type Service = {
+export type Service1Type = {
   name: string;
   image: StaticImageData | string;
   description: string;
 };
 
-const services: Service[] = [
+const services: Service1Type[] = [
   {
     name: "Servico 1",
     image: "images/services/service-1.webp",
@@ -29,7 +29,7 @@ const services: Service[] = [
   },
 ];
 
-const NossosServicos = () => {
+const Services1 = () => {
   return (
     <section className="container flex flex-col gap-y-16 justify-center items-center mx-auto mt-24">
       <div>
@@ -42,11 +42,11 @@ const NossosServicos = () => {
       </div>
       <div className="grid grid-cols-1 gap-8 p-12 w-full md:grid-cols-3">
         {services.map((service) => (
-          <CardServico key={service.name} {...service} />
+          <ServiceCard key={service.name} {...service} />
         ))}
       </div>
     </section>
   );
 };
 
-export default NossosServicos;
+export default Services1;

@@ -1,12 +1,12 @@
-import CardCliente from "./CardCliente";
+import ClientCard1 from "./ClientCard1";
 
-export type Client = {
+export type Client1Type = {
   name: string;
   position: string;
   testament: string;
 };
 
-const clients: Client[] = [
+const clients: Client1Type[] = [
   {
     name: "Tubias",
     position: "Head nos Portulovers",
@@ -14,7 +14,7 @@ const clients: Client[] = [
   },
 ];
 
-const ProvaSocial = () => {
+const Clients1 = () => {
   return (
     <div className="w-full text-gray-900 bg-gray-200">
       <div className="container flex flex-col gap-y-16 justify-center items-center py-16 px-8 mx-auto">
@@ -26,10 +26,10 @@ const ProvaSocial = () => {
             Testemunho dos nossos melhores clientes
           </h2>
         </div>
-        <CardCliente {...clients[0]} />
+        <ClientCard1 {...clients[0]} />
       </div>
     </div>
   );
 };
 
-export default ProvaSocial;
+export default Clients1;

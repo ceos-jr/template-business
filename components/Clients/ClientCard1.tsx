@@ -1,8 +1,8 @@
-import { Client } from "./ProvaSocial";
+import { Client1Type } from "./Clients1";
 
-type ClientCardProps = Client;
+type ClientCard1Props = Client1Type;
 
-const CardCliente = ({ name, position, testament }: ClientCardProps) => {
+const ClientCard1 = ({ name, position, testament }: ClientCard1Props) => {
   return (
     <div className="p-4 text-center bg-white rounded-lg shadow-lg">
       <h3 className="text-xl font-bold">{name}</h3>
@@ -12,4 +12,4 @@ const CardCliente = ({ name, position, testament }: ClientCardProps) => {
   );
 };
 
-export default CardCliente;
+export default ClientCard1;

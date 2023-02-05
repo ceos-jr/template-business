@@ -1,8 +1,8 @@
-import CardMembro from "./CardMembro";
+import MemberCard1 from "./MemberCard1";
 import { StaticImageData } from "next/image";
-import ConorImg from "../public/images/members/conor.webp";
+import ConorImg from "../../public/images/members/conor.webp";
 
-export type Member = {
+export type Member1Type = {
   name: string;
   position: string;
   image?: StaticImageData | string;
@@ -12,7 +12,7 @@ export type Member = {
   twitter?: string;
 };
 
-const members: Member[] = [
+const members: Member1Type[] = [
   {
     name: "Conor McGregor",
     position: "CEO",
@@ -25,7 +25,7 @@ const members: Member[] = [
   },
 ];
 
-const NossoTime = () => {
+const Members1 = () => {
   return (
     <div className="container flex flex-col gap-8 justify-center p-8 pt-24 mx-auto">
       <p className="text-lg font-semibold text-primary-600">Nosso Time</p>
@@ -34,7 +34,7 @@ const NossoTime = () => {
       </h1>
       <div className="p-4">
         {members.map((member) => (
-          <CardMembro
+          <MemberCard1
             key={`member-${member.name}`}
             name={member.name}
             position={member.position}
@@ -50,4 +50,4 @@ const NossoTime = () => {
   );
 };
 
-export default NossoTime;
+export default Members1;

@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import { Inter } from "@next/font/google";
 import Head from "next/head";
-import SubHeader from "../components/SubHeader";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import NossosServicos from "../components/NossosServicos";
-import Estatisticas from "../components/Estatisticas";
-import NossoTime from "../components/NossoTime";
-import ProvaSocial from "../components/ProvaSocial";
+import SubHeader1 from "../components/Nav-Header/SubHeader1";
+import Header1 from "../components/Nav-Header/Header1";
+import Hero1 from "../components/Heros/Hero1";
+import Services1 from "../components/Services/Services1";
+import StatisticsSection from "../components/Stats/Stats1";
+import Member1 from "../components/Members/Members1";
+import Clients1 from "../components/Clients/Clients1";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,14 +22,14 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <SubHeader />
-      <Header />
+      <SubHeader1 />
+      <Header1 />
       <main className="w-full min-h-screen">
-        <Hero />
-        <NossosServicos />
-        <Estatisticas />
-        <ProvaSocial />
-        <NossoTime />
+        <Hero1 />
+        <Services1 />
+        <StatisticsSection />
+        <Clients1 />
+        <Member1 />
       </main>
     </div>
   );

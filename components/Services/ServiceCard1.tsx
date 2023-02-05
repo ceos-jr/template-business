@@ -1,9 +1,9 @@
 import ExportedImage from "next-image-export-optimizer";
-import { Service } from "./NossosServicos";
+import { Service1Type } from "./Services1";
 
-type CardServicoProps = Service;
+type ServiceCard1Props = Service1Type;
 
-const CardServico = ({ name, image, description }: CardServicoProps) => {
+const ServiceCard = ({ name, image, description }: ServiceCard1Props) => {
   return (
     <div className="flex overflow-hidden flex-col items-center bg-gray-100 rounded-lg shadow-xl min-h-64">
       <div className="overflow-hidden relative w-full aspect-video">
@@ -22,4 +22,4 @@ const CardServico = ({ name, image, description }: CardServicoProps) => {
   );
 };
 
-export default CardServico;
+export default ServiceCard;

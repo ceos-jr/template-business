@@ -1,5 +1,5 @@
-import StatisticCard, { StatisticsCardProps } from "./CardEstatistica";
-import Button from "./Button";
+import StatisticCard, { StatisticsCardProps } from "./StatsCard1";
+import Button1 from "../layout/Button1";
 
 export type Statistic = {
   number: number;
@@ -31,7 +31,7 @@ const StatisticsSection = () => {
             urna semper, faucibus elit vel, ornare ipsum. Nullam lorem est,
             vulputate sit amet lorem eget, gravida sagittis ex.
           </p>
-          <Button type="primary">Contact us</Button>
+          <Button1 type="primary">Contact us</Button1>
         </div>
         <div className="grid grid-cols-1 gap-12 text-white md:grid-cols-2 md:grid-rows-2">
           {statistics.map((statistic) => (

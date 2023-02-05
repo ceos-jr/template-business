@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Statistic } from "./Estatisticas";
+import { Statistic } from "./Stats1";
 
 export interface StatisticsCardProps extends Statistic {
   speed: number;

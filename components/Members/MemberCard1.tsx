@@ -2,9 +2,9 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineUser, AiOutlineTwitter } from "react-icons/ai";
 import { IconType } from "react-icons";
 import ExportedImage from "next-image-export-optimizer";
-import { Member } from "./NossoTime";
+import { Member1Type } from "./Members1";
 
-type CardMembroProps = Member;
+type CardMembroProps = Member1Type;
 
 const MediaLink = ({ Icon, link }: { Icon: IconType; link: string }) => {
   return (
@@ -14,7 +14,7 @@ const MediaLink = ({ Icon, link }: { Icon: IconType; link: string }) => {
   );
 };
 
-const CardMembro = ({
+const MemberCard1 = ({
   name,
   position,
   image,
@@ -49,4 +49,4 @@ const CardMembro = ({
   );
 };
 
-export default CardMembro;
+export default MemberCard1;
