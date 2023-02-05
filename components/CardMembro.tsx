@@ -1,12 +1,13 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineUser, AiOutlineTwitter } from "react-icons/ai";
-import Image from "next/image";
 import { IconType } from "react-icons";
+import ExportedImage from "next-image-export-optimizer";
+import { StaticImageData } from "next/image";
 
 interface CardMembroProps {
   name: string;
   position: string;
-  image?: string;
+  image?: StaticImageData | string;
   linkedin?: string;
   instagram?: string;
   facebook?: string;
@@ -32,13 +33,13 @@ const CardMembro = ({
 }: CardMembroProps) => {
   return (
     <div className="flex flex-col gap-4 justify-center items-center p-4 bg-gray-100 rounded-lg shadow-xl">
-      <div className="overflow-hidden relative w-32 h-32 rounded-full">
+      <div className="overflow-hidden relative w-40 h-40 rounded-full">
         {image ? (
-          <Image
+          <ExportedImage
             src={image}
-            fill
             alt={`member-${name}`}
             className="object-cover"
+            fill
           />
         ) : (
           <AiOutlineUser className="w-full h-full text-gray-800 bg-white" />

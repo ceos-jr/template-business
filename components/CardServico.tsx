@@ -1,8 +1,9 @@
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import { StaticImageData } from "next/image";
 
 interface CardServicoProps {
   name: string;
-  image: string;
+  image: StaticImageData | string;
   description: string;
 }
 
@@ -10,11 +11,11 @@ const CardServico = ({ name, image, description }: CardServicoProps) => {
   return (
     <div className="flex overflow-hidden flex-col items-center bg-gray-100 rounded-lg shadow-xl min-h-64">
       <div className="overflow-hidden relative w-full aspect-video">
-        <Image
+        <ExportedImage
           src={image}
           alt={`image-${name}`}
-          fill
           className="object-cover"
+          fill
         />
       </div>
       <div className="p-6">

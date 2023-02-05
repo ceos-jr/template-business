@@ -1,4 +1,29 @@
 import CardMembro from "./CardMembro";
+import { StaticImageData } from "next/image";
+import ConorImg from "../public/images/members/conor.webp";
+
+type Member = {
+  name: string;
+  position: string;
+  image?: StaticImageData | string;
+  linkedin?: string;
+  instagram?: string;
+  facebook?: string;
+  twitter?: string;
+};
+
+const members: Member[] = [
+  {
+    name: "Conor McGregor",
+    position: "CEO",
+    image: ConorImg,
+  },
+  {
+    name: "Dana White",
+    position: "Biggest fan of McGregor",
+    image: "images/members/dana.webp",
+  },
+];
 
 const NossoTime = () => {
   return (
@@ -8,7 +33,18 @@ const NossoTime = () => {
         Somos uma equipe de pequenos contadores de historias e roubado da ceos
       </h1>
       <div className="p-4">
-        <CardMembro name="tubias" position="tobaianor" />
+        {members.map((member) => (
+          <CardMembro
+            key={`member-${member.name}`}
+            name={member.name}
+            position={member.position}
+            image={member.image}
+            linkedin={member.linkedin}
+            instagram={member.instagram}
+            facebook={member.facebook}
+            twitter={member.twitter}
+          />
+        ))}
       </div>
     </div>
   );

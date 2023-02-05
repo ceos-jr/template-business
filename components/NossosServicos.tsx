@@ -1,4 +1,33 @@
 import CardServico from "./CardServico";
+import Service1Img from "../public/images/services/service-1.webp";
+import { StaticImageData } from "next/image";
+
+type Service = {
+  name: string;
+  image: StaticImageData | string;
+  description: string;
+};
+
+const services: Service[] = [
+  {
+    name: "Servico 1",
+    image: "images/services/service-1.webp",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit tortor sed augue suscipit tincidunt. Pellentesque vestibulum tellus gravida quam volutpat imperdiet.",
+  },
+  {
+    name: "Servico 2",
+    image: Service1Img,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit tortor sed augue suscipit tincidunt. Pellentesque vestibulum tellus gravida quam volutpat imperdiet.",
+  },
+  {
+    name: "Servico 3",
+    image: Service1Img,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit tortor sed augue suscipit tincidunt. Pellentesque vestibulum tellus gravida quam volutpat imperdiet.",
+  },
+];
 
 const NossosServicos = () => {
   return (
@@ -12,21 +41,14 @@ const NossosServicos = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 gap-8 p-12 w-full md:grid-cols-3">
-        <CardServico
-          name="Servico 1"
-          image="https://templatemo.com/templates/templatemo_545_finance_business/assets/images/service_01.jpg"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit tortor sed augue suscipit tincidunt. Pellentesque vestibulum tellus gravida quam volutpat imperdiet."
-        />
-        <CardServico
-          name="Servico 1"
-          image="https://templatemo.com/templates/templatemo_545_finance_business/assets/images/service_01.jpg"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit tortor sed augue suscipit tincidunt. Pellentesque vestibulum tellus gravida quam volutpat imperdiet."
-        />
-        <CardServico
-          name="Servico 1"
-          image="https://templatemo.com/templates/templatemo_545_finance_business/assets/images/service_01.jpg"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit tortor sed augue suscipit tincidunt. Pellentesque vestibulum tellus gravida quam volutpat imperdiet."
-        />
+        {services.map((service) => (
+          <CardServico
+            name={service.name}
+            image={service.image}
+            description={service.description}
+            key={service.name}
+          />
+        ))}
       </div>
     </section>
   );
