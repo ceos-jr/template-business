@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaFacebookF, FaLinkedinIn, FaTwitter, FaBehance } from "rea
 
 const SubHeader = () => {
   return (
-    <div className="hidden absolute top-0 w-full h-12 bg-[#a4c639] md:flex">
+    <div className="hidden absolute top-0 w-full h-12 bg-[#a4c639] z-10 md:flex">
       <div className="container flex justify-between">
         <ul className="flex text-white text-sm font-bold px-5 lg:px-0">
           <li className="flex items-center h-full px-5 border-x border-[#ffffff4d]">

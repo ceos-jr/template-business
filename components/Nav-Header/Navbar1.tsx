@@ -79,7 +79,7 @@ const Navbar = () => {
             Finance Business
           </h2>
         </a>
-        <ul className="hidden bg-black lg:flex">
+        <ul className="hidden bg-transparent lg:flex">
           {NavItemData.map((data) => {
             return (
               <NavItem
