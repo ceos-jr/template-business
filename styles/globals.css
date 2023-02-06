@@ -8,11 +8,11 @@
   }
 
   .btn-primary {
-    @apply text-xs font-extrabold uppercase px-7 py-3 rounded-full transition-colors duration-300 ease-in hover:bg-white hover:text-primary-600 bg-primary-600;
+    @apply text-white text-xs font-extrabold uppercase px-7 py-3 rounded-full transition-colors duration-300 ease-in hover:bg-white hover:text-primary-600 bg-primary-600;
   }
 
   .btn-outline {
-    @apply text-xs font-extrabold uppercase px-7 py-3 rounded-full transition-colors duration-300 ease-in hover:bg-white hover:text-primary-600 border-2 border-white;
+    @apply text-white text-xs font-extrabold uppercase px-7 py-3 rounded-full transition-colors duration-300 ease-in hover:bg-white hover:text-primary-600 border-2 border-white;
   }
 
   .floating-input {
