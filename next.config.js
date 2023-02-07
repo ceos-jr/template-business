@@ -14,4 +14,4 @@ module.exports = {
     nextImageExportOptimizer_storePicturesInWEBP: true,
     nextImageExportOptimizer_generateAndUseBlurImages: true,
   },
-};
+}

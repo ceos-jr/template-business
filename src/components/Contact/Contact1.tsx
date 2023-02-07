@@ -1,4 +1,4 @@
-import ExportedImage from "next-image-export-optimizer";
+import ExportedImage from "next-image-export-optimizer"
 
 const Contact1 = () => {
   return (
@@ -83,7 +83,7 @@ const Contact1 = () => {
         </form>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Contact1;
+export default Contact1

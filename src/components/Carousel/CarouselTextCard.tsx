@@ -2,10 +2,10 @@ import { ReactNode } from "react"
 import Button from "../layout/Button1"
 
 interface CarouselTextCardProps {
-  subTitle: ReactNode;
-  title: ReactNode;
-  paragraph: ReactNode;
-  button: ReactNode;
+  subTitle: ReactNode
+  title: ReactNode
+  paragraph: ReactNode
+  button: ReactNode
 }
 
 const CarouselTextCard = ({
@@ -30,4 +30,4 @@ const CarouselTextCard = ({
   )
 }
 
-export default CarouselTextCard;
+export default CarouselTextCard

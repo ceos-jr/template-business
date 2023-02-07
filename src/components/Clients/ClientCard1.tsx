@@ -1,6 +1,6 @@
-import { Client1Type } from "./Clients1";
+import { Client1Type } from "./Clients1"
 
-type ClientCard1Props = Client1Type;
+type ClientCard1Props = Client1Type
 
 const ClientCard1 = ({ name, position, testament }: ClientCard1Props) => {
   return (
@@ -9,7 +9,7 @@ const ClientCard1 = ({ name, position, testament }: ClientCard1Props) => {
       <h4 className="font-bold text-primary-400">{position}</h4>
       <p>{testament}</p>
     </div>
-  );
-};
+  )
+}
 
-export default ClientCard1;
+export default ClientCard1

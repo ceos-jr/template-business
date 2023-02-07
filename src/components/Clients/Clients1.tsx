@@ -1,10 +1,10 @@
-import ClientCard1 from "./ClientCard1";
+import ClientCard1 from "./ClientCard1"
 
 export type Client1Type = {
-  name: string;
-  position: string;
-  testament: string;
-};
+  name: string
+  position: string
+  testament: string
+}
 
 const clients: Client1Type[] = [
   {
@@ -12,7 +12,7 @@ const clients: Client1Type[] = [
     position: "Head nos Portulovers",
     testament: "Si si si mano, mucho legal, gostei mucho mesmo",
   },
-];
+]
 
 const Clients1 = () => {
   return (
@@ -29,7 +29,7 @@ const Clients1 = () => {
         <ClientCard1 {...clients[0]} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Clients1;
+export default Clients1

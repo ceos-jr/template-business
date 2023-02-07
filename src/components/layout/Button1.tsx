@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
+import { ReactNode } from "react"
 
 interface ButtonProps {
-  children: ReactNode;
-  type?: string;
-  className?: string;
+  children: ReactNode
+  type?: string
+  className?: string
 }
 
 const Button = ({ children, type, className }: ButtonProps) => {
@@ -15,7 +15,7 @@ const Button = ({ children, type, className }: ButtonProps) => {
     >
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

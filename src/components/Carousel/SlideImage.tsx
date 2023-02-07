@@ -1,7 +1,7 @@
-import ExportedImage from "next-image-export-optimizer";
+import ExportedImage from "next-image-export-optimizer"
 
 interface SlideImageProps {
-  number: number;
+  number: number
 }
 
 const SlideImage = ({ number }: SlideImageProps) => {
@@ -13,7 +13,7 @@ const SlideImage = ({ number }: SlideImageProps) => {
       key={`slide-${number}`}
       fill
     />
-  );
-};
+  )
+}
 
-export default SlideImage;
+export default SlideImage

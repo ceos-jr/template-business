@@ -1,7 +1,7 @@
-import ExportedImage from "next-image-export-optimizer";
-import { Service1Type } from "./Services1";
+import ExportedImage from "next-image-export-optimizer"
+import { Service1Type } from "./Services1"
 
-type ServiceCard1Props = Service1Type;
+type ServiceCard1Props = Service1Type
 
 const ServiceCard = ({ name, image, description }: ServiceCard1Props) => {
   return (
@@ -19,7 +19,7 @@ const ServiceCard = ({ name, image, description }: ServiceCard1Props) => {
         <p className="text-gray-500">{description}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ServiceCard;
+export default ServiceCard

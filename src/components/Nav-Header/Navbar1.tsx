@@ -1,5 +1,5 @@
-import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi"
+import { useState } from "react"
 
 const NavItemData = [
   {
@@ -22,11 +22,11 @@ const NavItemData = [
     text: "Multi-Page",
     url: "#",
   },
-];
+]
 
 interface NavItemProps {
-  text: string;
-  url: string;
+  text: string
+  url: string
 }
 
 const NavItemMobile = ({ text, url }: NavItemProps) => {
@@ -36,16 +36,15 @@ const NavItemMobile = ({ text, url }: NavItemProps) => {
         {text}
       </a>
     </li>
-  );
-};
+  )
+}
 
 const NavItem = ({ text, url }: NavItemProps) => {
   return (
     <li className="text-white mx-4">
       <a
         href={url}
-        className={
-          `
+        className={`
             relative px-2 py-2 [transtition:_color_300ms_ease-in] 
             before:absolute 
             before:w-0 before:h-0.5 
@@ -55,21 +54,20 @@ const NavItem = ({ text, url }: NavItemProps) => {
             before:[transition:_width_300ms_ease-in]
             hover:text-primary-500
             hover:before:w-full
-          ` 
-        }
+          `}
       >
         {text}
       </a>
     </li>
-  );
-};
+  )
+}
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   const toggleNavbar = () => {
-    setOpen((previous) => !previous);
-  };
+    setOpen((previous) => !previous)
+  }
 
   return (
     <nav className="relative flex px-4 h-20 w-full lg:h-24">
@@ -87,7 +85,7 @@ const Navbar = () => {
                 text={data.text}
                 url={data.url}
               />
-            );
+            )
           })}
         </ul>
         <button
@@ -109,12 +107,12 @@ const Navbar = () => {
                 text={data.text}
                 url={data.url}
               />
-            );
+            )
           })}
         </ul>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

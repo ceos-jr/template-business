@@ -1,18 +1,18 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineUser, AiOutlineTwitter } from "react-icons/ai";
-import { IconType } from "react-icons";
-import ExportedImage from "next-image-export-optimizer";
-import { Member1Type } from "./Members1";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa"
+import { AiOutlineUser, AiOutlineTwitter } from "react-icons/ai"
+import { IconType } from "react-icons"
+import ExportedImage from "next-image-export-optimizer"
+import { Member1Type } from "./Members1"
 
-type CardMembroProps = Member1Type;
+type CardMembroProps = Member1Type
 
 const MediaLink = ({ Icon, link }: { Icon: IconType; link: string }) => {
   return (
     <a href={link}>
       <Icon className="p-1 rounded-lg border-2 transition-all duration-500 cursor-pointer hover:text-white text-primary-400 border-primary-400 hover:bg-primary-400" />
     </a>
-  );
-};
+  )
+}
 
 const MemberCard1 = ({
   name,
@@ -46,7 +46,7 @@ const MemberCard1 = ({
         {twitter && <MediaLink Icon={AiOutlineTwitter} link={twitter} />}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MemberCard1;
+export default MemberCard1

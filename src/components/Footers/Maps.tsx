@@ -1,14 +1,14 @@
-import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
-import { useMemo } from "react";
+import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api"
+import { useMemo } from "react"
 
 export interface MapsProps {
-  zoom: number;
-  className: string;
+  zoom: number
+  className: string
 }
 
 //Create API key here https://console.cloud.google.com/apis/credentials/key
 const Maps = ({ zoom, className }: MapsProps) => {
-  const libraries = useMemo(() => ["places"], []);
+  const libraries = useMemo(() => ["places"], [])
 
   const mapCenter = useMemo(
     () => ({
@@ -16,7 +16,7 @@ const Maps = ({ zoom, className }: MapsProps) => {
       lng: -38.5736588,
     }),
     []
-  );
+  )
   const mapOptions = useMemo<google.maps.MapOptions>(
     () => ({
       disableDefaultUI: false,
@@ -24,14 +24,14 @@ const Maps = ({ zoom, className }: MapsProps) => {
       scrollwheel: true,
     }),
     []
-  );
+  )
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY as string,
     libraries: libraries as any,
-  });
+  })
 
-  if (!isLoaded) return <div>Loading...</div>;
+  if (!isLoaded) return <div>Loading...</div>
 
   return (
     <GoogleMap
@@ -43,7 +43,7 @@ const Maps = ({ zoom, className }: MapsProps) => {
     >
       <MarkerF position={mapCenter} />
     </GoogleMap>
-  );
-};
+  )
+}
 
-export default Maps;
+export default Maps

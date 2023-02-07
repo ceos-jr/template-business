@@ -1,9 +1,9 @@
-import { ReactNode, CSSProperties } from "react";
+import { ReactNode, CSSProperties } from "react"
 
 interface CarouselSlideProps {
-  children: ReactNode;
-  position: number;
-  className?: string;
+  children: ReactNode
+  position: number
+  className?: string
 }
 
 const CarouselSlide = ({
@@ -13,7 +13,7 @@ const CarouselSlide = ({
 }: CarouselSlideProps) => {
   const itemStyle = {
     left: `${position * 100}%`,
-  } as CSSProperties;
+  } as CSSProperties
 
   return (
     <div
@@ -22,7 +22,7 @@ const CarouselSlide = ({
     >
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default CarouselSlide;
+export default CarouselSlide

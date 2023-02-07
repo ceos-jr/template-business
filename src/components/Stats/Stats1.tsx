@@ -1,18 +1,18 @@
-import StatisticCard, { StatisticsCardProps } from "./StatsCard1";
-import Button1 from "../layout/Button1";
+import StatisticCard, { StatisticsCardProps } from "./StatsCard1"
+import Button1 from "../layout/Button1"
 
 export type Statistic = {
-  number: number;
-  name: string;
-  description?: string;
-};
+  number: number
+  name: string
+  description?: string
+}
 
 const statistics: StatisticsCardProps[] = [
   { number: 945, name: "Jobs", speed: 1 },
   { number: 949, name: "Hours Saved", speed: 1 },
   { number: 958, name: "Useful thing", speed: 1 },
   { number: 965, name: "Change", speed: 1 },
-];
+]
 
 const StatisticsSection = () => {
   return (
@@ -40,7 +40,7 @@ const StatisticsSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default StatisticsSection;
+export default StatisticsSection

@@ -4,8 +4,8 @@ import {
   FaInstagram,
   FaLinkedin,
   FaWhatsapp,
-} from "react-icons/fa";
-import MediaLinkDark from "./MediaLinkDark";
+} from "react-icons/fa"
+import MediaLinkDark from "./MediaLinkDark"
 
 // To generate whatsapp link https://postcron.com/en/blog/landings/whatsapp-link-generator/
 const socialMedia = {
@@ -15,7 +15,7 @@ const socialMedia = {
   whatsapp:
     "https://api.whatsapp.com/send?phone=77777777&text=Bem%20vindo%20a%20CEOS",
   facebook: "https://pt-br.facebook.com/",
-};
+}
 
 const Footer1 = () => {
   return (
@@ -95,7 +95,7 @@ const Footer1 = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer1;
+export default Footer1
