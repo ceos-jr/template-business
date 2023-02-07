@@ -1,16 +1,16 @@
-import MemberCard1 from "./MemberCard1";
-import { StaticImageData } from "next/image";
-import ConorImg from "../../public/images/members/conor.webp";
+import MemberCard1 from "./MemberCard1"
+import { StaticImageData } from "next/image"
+import ConorImg from "@/images/members/conor.webp"
 
 export type Member1Type = {
-  name: string;
-  position: string;
-  image?: StaticImageData | string;
-  linkedin?: string;
-  instagram?: string;
-  facebook?: string;
-  twitter?: string;
-};
+  name: string
+  position: string
+  image?: StaticImageData | string
+  linkedin?: string
+  instagram?: string
+  facebook?: string
+  twitter?: string
+}
 
 const members: Member1Type[] = [
   {
@@ -23,7 +23,7 @@ const members: Member1Type[] = [
     position: "Biggest fan of McGregor",
     image: "images/members/dana.webp",
   },
-];
+]
 
 const Members1 = () => {
   return (
@@ -47,7 +47,7 @@ const Members1 = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Members1;
+export default Members1

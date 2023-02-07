@@ -1,12 +1,12 @@
-import ServiceCard from "./ServiceCard1";
-import Service1Img from "../../public/images/services/service-1.webp";
-import { StaticImageData } from "next/image";
+import ServiceCard from "./ServiceCard1"
+import Service1Img from "@/images/services/service-1.webp"
+import { StaticImageData } from "next/image"
 
 export type Service1Type = {
-  name: string;
-  image: StaticImageData | string;
-  description: string;
-};
+  name: string
+  image: StaticImageData | string
+  description: string
+}
 
 const services: Service1Type[] = [
   {
@@ -27,7 +27,7 @@ const services: Service1Type[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit tortor sed augue suscipit tincidunt. Pellentesque vestibulum tellus gravida quam volutpat imperdiet.",
   },
-];
+]
 
 const Services1 = () => {
   return (
@@ -46,7 +46,7 @@ const Services1 = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Services1;
+export default Services1
