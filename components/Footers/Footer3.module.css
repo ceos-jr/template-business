@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Roboto:wght@100&display=swap');
+
 .footer{
     display: grid;
-    grid-template-columns: 1fr 3.5fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     padding-left: 50px;
     background-color: black;
     color: white;
@@ -8,13 +10,31 @@
 
 }
 
-.footer first-section ul li{
-    font-size: 1px;
-    color: red;
+.firstsection{
+    margin-top: 30px;
+    width: 50%;
+
 }
+
+.firstsection ul li{
+    font-size: 10px;
+
+}
+
 
 .box{
     display: grid;
     padding-left: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 40px;
     
+}
+
+.box h3{
+    font-size: 20px;
+}
+
+.box ul li{
+    font-family:'Roboto', sans-serif;
 }
