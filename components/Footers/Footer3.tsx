@@ -1,4 +1,4 @@
-import styles from "./Footer3.css";
+import styles from "./Footer3.module.css";
 {/*Sei la oq ta rolando aqui, sou burra*/}
 import {
     FaCube,
@@ -12,17 +12,17 @@ import {
 const Footer3 = () => {
     return(
         <footer className={styles.footer}>
-                <div className="">
-                    <FaCube className={styles.cubo}/>
+                <div className="first-section">
+                    <FaCube size="10rem"/>
                     <ul>
                         <li>(85) 7777 7777</li>
                         <li>ceosadmin@gmail.com</li>
                         <li>Campus do Pici - UFC, Fortaleza, CE</li>
+                        <li>Copyright © 2023 Financial Business</li>
                     </ul>
-                    <h3>Copyright © 2023 Financial Business</h3>
                 </div>
 
-                <div className="box">
+                <div className={styles.box}>
                     {/*Quero dividir isso em mais colunas com info */}
                     <h3>Products</h3>
                     <ul>

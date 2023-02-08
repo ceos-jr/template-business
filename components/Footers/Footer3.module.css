@@ -1,0 +1,20 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1fr;
+    padding-left: 50px;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+
+}
+
+.footer first-section ul li{
+    font-size: 1px;
+    color: red;
+}
+
+.box{
+    display: grid;
+    padding-left: 50px;
+    
+}
