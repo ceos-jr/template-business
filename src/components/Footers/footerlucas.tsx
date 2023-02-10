@@ -20,7 +20,7 @@ const socialMedia = {
 
 export default function FooterLucas(){
     return(
-        <footer className="py-16 px-8 bg-gray-900 md:py-8">
+        <footer className="py-16 px-8 bg-gray-900 md:py-8 divide-y">
             <div className = "flex justify-evenly py-10 md:py-5 flex-col gap-5 md:flex-row">
                 <div className = "flex flex-col gap-4">
                     <img className = "w-36" src= "https://www.oowlish.com/wp-content/uploads/2021/03/oowlish-logo-white.svg"/>
@@ -53,6 +53,7 @@ export default function FooterLucas(){
                 </div>
 
             </div>
+          <p className="py-4 text-center text-xs text-white"> Todos os direitos reservados © Ceos Jr. </p>
             
         </footer>
     )
