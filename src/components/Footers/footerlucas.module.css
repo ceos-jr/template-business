@@ -1,0 +1,26 @@
+
+.container_logo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo_footer{
+    width: 150px;
+}
+
+.text_logo_footer{
+    color: white;
+    font-size: 12px;
+    width: 280px;
+    font-weight: 100;
+}
+
+.footer_menu{
+    display: flex;
+    gap: 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+

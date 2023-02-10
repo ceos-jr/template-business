@@ -19,7 +19,7 @@ const socialMedia = {
 
 const Footer1 = () => {
   return (
-    <footer className="py-16 px-8 bg-gray-900 md:py-8">
+    <footer className="py-16 px-8 bg-gray-900 md:py-8 display:flex">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-8 mb-8 text-white md:grid-cols-3">
           <div>
