@@ -8,7 +8,7 @@ import Services1 from "@/components/Services/Services1"
 import StatisticsSection from "@/components/Stats/Stats1"
 import Member1 from "@/components/Members/Members1"
 import Clients1 from "@/components/Clients/Clients1"
-import Footer1 from "@/components/Footers/Footer1"
+import FooterVic from "@/components/Footers/Footer3"
 import Contact1 from "@/components/Contact/Contact1"
 import FooterLucas from "@/components/Footers/footerlucas"
 
