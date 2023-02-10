@@ -11,6 +11,7 @@ import Clients1 from "@/components/Clients/Clients1"
 import FooterVic from "@/components/Footers/Footer3"
 import Contact1 from "@/components/Contact/Contact1"
 import FooterLucas from "@/components/Footers/footerlucas"
+import Footer1 from "@/components/Footers/Footer1"
 
 const inter = Inter({
   subsets: ["latin"],
