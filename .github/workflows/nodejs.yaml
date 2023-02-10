@@ -21,19 +21,19 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
-      - run: yarn install --immutable --immutable-cache
-      - run: yarn type-check
-      - run: yarn build
-      - run: yarn lint
+          cache: "npm"
+      - run: npm ci
+      - run: npm run type-check
+      - run: npm run lint
+      - run: npm run build --if-present
   format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
-      - run: yarn install --immutable --immutable-cache
-      - run: yarn format
+      - run: npm ci
+      - run: npm run format
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
