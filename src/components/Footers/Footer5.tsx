@@ -6,12 +6,13 @@ import {
   FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa"
+import JuliaMediaLinkDark from "./JuliaMediaLinkDark"
 
 const Footer5 = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.firstsection}>
-        <FaCube size="15rem" />
+        <FaCube className={styles.cubo} />
         <div className={styles.contato}>
           <ul>
             <h3>Contact us</h3>
@@ -53,12 +54,11 @@ const Footer5 = () => {
           <li>Settings</li>
         </ul>
       </div>
-      -
-      <div className="socials">
-        <FaInstagram size="7rem" />
-        <FaFacebookF size="7rem" />
-        <FaLinkedin size="7rem" />
-        <FaWhatsapp size="7rem" />
+      <div className={styles.socials}>
+        <JuliaMediaLinkDark link="123" Icon={FaInstagram} />
+        <JuliaMediaLinkDark link="123" Icon={FaFacebookF} />
+        <JuliaMediaLinkDark link="123" Icon={FaLinkedin} />
+        <JuliaMediaLinkDark link="123" Icon={FaWhatsapp} />
       </div>
     </footer>
   )
