@@ -21,11 +21,11 @@ import {
     return (
       <footer className="py-16 px-8 bg-slate-200 md:py-8">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 gap-8 mb-8 text-sky-900 md:grid-cols-5">
+          <div className="grid grid-cols-1 gap-8 mb-8 text-sky-900 md:grid-cols-4">
 
           <div>
-              <h2 className="mb-4 text-gray-400 text-2xl font-bold">Product</h2>
-              <ul className="flex flex-col gap-2">
+              <h2 className=" mb-4 text-gray-400 text-2xl font-bold">Product</h2>
+              <ul className="flex flex-col gap-4">
                 <li>
                   <a
                     className="transition-colors cursor-pointer hover:text-rose-900"
@@ -71,9 +71,9 @@ import {
                 
             
 
-            <div>
+            <div >
               <h2 className="mb-4 text-gray-400 text-2xl font-bold">Links</h2>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-4">
                 <li>
                   <a
                     className="transition-colors cursor-pointer hover:text-rose-900"
@@ -110,11 +110,14 @@ import {
             </div>
             <div>
               <h2 className="mb-4 text-gray-400 text-2xl font-bold">Contact</h2>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-4 ">
                 <li>(85) 7777 7777</li>
                 <li>ceosadmin@gmail.com</li>
                 <li>Campus do Pici - UFC, Fortaleza, CE</li>
-              </ul>
+              </ul>  
+            </div>
+            <div>
+                <img src="/images/buildyour.jpg" height="1000" width="1000"></img>
             </div>
           </div>
           <div className="my-4 h-0.5 bg-gray-400 rounded-full"></div>
