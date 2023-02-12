@@ -53,7 +53,7 @@ const Footer6 = () => {
         </div>
       </div>
       <ul className="py-4 flex flex-col justify-center items-center md:flex-row container gap-8">
-        <LinkText link="354" text="Carrers" />
+        <LinkText link="000" text="Carrers" />
         <LinkText link="351" text="Help Center" />
         <LinkText link="352" text="Terms of Service" />
         <LinkText link="353" text="Privacy" />
