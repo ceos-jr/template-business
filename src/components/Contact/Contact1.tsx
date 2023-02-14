@@ -1,10 +1,10 @@
-import ExportedImage from "next-image-export-optimizer"
+import Image from "next/image"
 
 const Contact1 = () => {
   return (
     <section className="container grid grid-cols-1 gap-8 place-items-center p-8 py-16 mx-auto md:grid-cols-2">
       <div className="relative w-full h-80 md:h-full">
-        <ExportedImage
+        <Image
           src="images/contact/bg1.svg"
           alt="contact image"
           className="object-contain"

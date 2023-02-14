@@ -1,4 +1,4 @@
-import ExportedImage from "next-image-export-optimizer"
+import Image from "next/image"
 import { Service1Type } from "./Services1"
 
 type ServiceCard1Props = Service1Type
@@ -7,10 +7,12 @@ const ServiceCard = ({ name, image, description }: ServiceCard1Props) => {
   return (
     <div className="flex overflow-hidden flex-col items-center bg-gray-100 rounded-lg shadow-xl min-h-64">
       <div className="overflow-hidden relative w-full aspect-video">
-        <ExportedImage
+        <Image
           src={image}
-          alt={`image-${name}`}
+          alt={`service ${name}`}
           className="object-cover"
+          placeholder="blur"
+          sizes="(max-width: 768px) 80vw, 350px"
           fill
         />
       </div>
