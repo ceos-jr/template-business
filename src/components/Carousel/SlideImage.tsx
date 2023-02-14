@@ -1,4 +1,4 @@
-import ExportedImage from "next-image-export-optimizer"
+import Image from "next/image"
 
 interface SlideImageProps {
   number: number
@@ -6,7 +6,7 @@ interface SlideImageProps {
 
 const SlideImage = ({ number }: SlideImageProps) => {
   return (
-    <ExportedImage
+    <Image
       className="object-cover"
       src={`/images/Hero/slide_${number.toString().padStart(2, "0")}.jpg`}
       alt={`carousel slide ${number}`}

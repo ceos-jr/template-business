@@ -11,7 +11,7 @@ export type Service1Type = {
 const services: Service1Type[] = [
   {
     name: "Servico 1",
-    image: "images/services/service-1.webp",
+    image: Service1Img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit tortor sed augue suscipit tincidunt. Pellentesque vestibulum tellus gravida quam volutpat imperdiet.",
   },

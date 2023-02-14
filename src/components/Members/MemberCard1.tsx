@@ -1,8 +1,8 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 import { AiOutlineUser, AiOutlineTwitter } from "react-icons/ai"
 import { IconType } from "react-icons"
-import ExportedImage from "next-image-export-optimizer"
 import { Member1Type } from "./Members1"
+import Image from "next/image"
 
 type CardMembroProps = Member1Type
 
@@ -27,10 +27,12 @@ const MemberCard1 = ({
     <div className="flex flex-col gap-4 justify-center items-center p-4 bg-gray-100 rounded-lg shadow-xl">
       <div className="overflow-hidden relative w-40 h-40 rounded-full">
         {image ? (
-          <ExportedImage
+          <Image
             src={image}
-            alt={`member-${name}`}
+            alt={`member ${name}`}
             className="object-cover"
+            sizes="10rem"
+            placeholder="blur"
             fill
           />
         ) : (
