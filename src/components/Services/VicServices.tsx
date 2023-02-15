@@ -35,7 +35,7 @@ const services3: Service1Type[] = [
 
 const VicServices = () => {
   return (
-    <section className="container flex flex-col gap-y-16 bg-stone-200	 justify-center items-center mx-auto mt-24 divide-y divide-black md:py-8 ">
+    <section className="container flex flex-col gap-y-16 bg-stone-200	 justify-center items-center mx-auto px-4 mt-24 divide-y divide-black md:py-8 ">
       <div>
         <h1 className="text-4xl font-bold text-gray-800">
           Our <span className="text-red-800	">Features</span>
@@ -50,7 +50,7 @@ const VicServices = () => {
           <VicServiceCard key={service.name} {...service} />
         ))}
         <div>
-          <p className="text-xl">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti delectus et natus officia? Delectus, aliquid vero sunt voluptatem saepe voluptate quis amet, necessitatibus officia fugiat molestias earum dignissimos aspernatur."</p>
+          <p className="text-xl italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti delectus et natus officia? Delectus, aliquid vero sunt voluptatem saepe voluptate quis amet, necessitatibus officia fugiat molestias earum dignissimos aspernatur."</p>
         </div>
       </div>
       
@@ -59,7 +59,7 @@ const VicServices = () => {
           <VicServiceCard key={service.name} {...service} />
         ))}
         <div>
-          <p className="text-xl">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam officiis et amet beatae eveniet voluptatem autem consectetur quidem hic neque architecto molestiae, harum nemo distinctio omnis recusandae ad assumenda delectus!"</p>
+          <p className="text-xl italic">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam officiis et amet beatae eveniet voluptatem autem consectetur quidem hic neque architecto molestiae, harum nemo distinctio omnis recusandae ad assumenda delectus!"</p>
         </div>
       </div>
       
@@ -68,7 +68,7 @@ const VicServices = () => {
           <VicServiceCard key={service.name} {...service} />
         ))}
         <div>
-          <p className="text-xl">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, id? Laboriosam harum quis aliquid fugiat iure voluptatem praesentium culpa accusamus! Eaque ea unde voluptatem cum placeat quia necessitatibus labore neque!"</p>
+          <p className="text-xl italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, id? Laboriosam harum quis aliquid fugiat iure voluptatem praesentium culpa accusamus! Eaque ea unde voluptatem cum placeat quia necessitatibus labore neque!"</p>
         </div>
       </div>
     </section>
