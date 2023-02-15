@@ -34,7 +34,7 @@ const Services1 = () => {
     <section className="container flex flex-col gap-y-16 justify-center items-center mx-auto mt-24">
       <div>
         <h1 className="text-4xl font-bold text-gray-800">
-          Nossos <span className="text-primary-500">Servicos</span>
+          Our <span className="text-primary-500">Services</span>
         </h1>
         <p className="pt-4 font-light text-gray-800 uppercase">
           Adquira um dos nossos servicos
