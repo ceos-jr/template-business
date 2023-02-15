@@ -16,45 +16,56 @@ const ServicesJuia = () => {
                 alt="barquinho"
                 objetc-fit="contain"
                 fill
+                className="hover:scale-125"
               />
             </div>
-            <h1 className="w-56 h-2 mt-4 bg-gray-200 rounded-lg animate-pulse"></h1>
+            <h1 className="w-56 h-6 mt-4 bg-gray-200 rounded-lg animate-pulse hover:scale-125 cursor-pointer hover:font-bold hover:text-teal-700">
+              <h4 className="text-center tracking-wider">Service 1.0</h4>
+            </h1>
             <p className="w-24 h-2 mt-4 bg-gray-200 rounded-lg animate-pulse"></p>
           </div>
           <div className="w-full">
             <div className="w-full h-64 bg-gray-300 rounded-lg relative overflow-hidden">
-            <Image
+              <Image
                 src="https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true"
                 alt="japon"
                 objetc-fit="contain"
                 fill
+                className="hover:scale-125"
               />
             </div>
-            <h1 className="w-56 h-2 mt-4 bg-gray-200 rounded-lg animate-pulse"></h1>
+            <h1 className="w-56 h-6 mt-4 bg-gray-200 rounded-lg animate-pulse hover:scale-125 cursor-pointer hover:font-bold hover:text-orange-600">
+              <h4 className="text-center tracking-wider">Service 2.0</h4>
+            </h1>
             <p className="w-24 h-2 mt-4 bg-gray-200 rounded-lg animate-pulse"></p>
           </div>
           <div className="w-full">
             <div className="w-full h-64 bg-gray-300 rounded-lg relative overflow-hidden">
-            <Image
+              <Image
                 src="https://images.unsplash.com/photo-1543710998-0b2b2a3c3a01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto&force=true"
                 alt="muie"
                 objetc-fit="contain"
                 fill
+                className="hover:scale-125"
               />
             </div>
-            <h1 className="w-56 h-2 mt-4 bg-gray-200 rounded-lg animate-pulse"></h1>
+            <h1 className="w-56 h-6 mt-4 bg-gray-200 rounded-lg animate-pulse hover:scale-125 cursor-pointer hover:font-bold hover:text-yellow-700">
+              <h4 className="text-center tracking-wider">Service 3.0</h4>
+            </h1>
             <p className="w-24 h-2 mt-4 bg-gray-200 rounded-lg animate-pulse"></p>
           </div>
           <div className="w-full">
             <div className="w-full h-64 bg-gray-300  rounded-lg relative overflow-hidden">
-            <Image
+              <Image
                 src="https://images.unsplash.com/photo-1673997058976-497b8e85f3f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto&force=true"
                 alt="paisagem lixo"
                 objetc-fit="contain"
                 fill
+                className="hover:scale-125"
               />
             </div>
-            <h1 className="w-56 h-2 mt-4 bg-gray-200 rounded-lg animate-pulse">
+            <h1 className="w-56 h-6 mt-4 bg-gray-200 rounded-lg animate-pulse hover:scale-125 cursor-pointer hover:font-bold">
+              <h4 className="text-center tracking-wider">Service 4.0</h4>
             </h1>
             <p className="w-24 h-2 mt-4 bg-gray-200 rounded-lg animate-pulse"></p>
           </div>
