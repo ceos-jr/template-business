@@ -3,9 +3,9 @@ import { Service1Type } from "./VicServices"
 
 type ServiceCard1Props = Service1Type
 
-const ServiceCard = ({ name, image, description }: ServiceCard1Props) => {
+const ServiceCard = ({ name, image }: ServiceCard1Props) => {
   return (
-    <div className="flex overflow-hidden flex-col items-center bg-green-50	 rounded-lg shadow-xl min-h-64">
+    <div className="flex overflow-hidden flex-col items-center bg-green-50 	 rounded-full shadow-xl min-h-64">
       <div className="overflow-hidden relative w-full aspect-video">
         <ExportedImage
           src={image}
@@ -16,7 +16,7 @@ const ServiceCard = ({ name, image, description }: ServiceCard1Props) => {
       </div>
       <div className="p-6">
         <h1 className="text-2xl font-bold text-gray-800">{name}</h1>
-        <p className="text-gray-500">{description}</p>
+      
       </div>
     </div>
   )
