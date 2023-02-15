@@ -2,7 +2,7 @@ import React from "react"
 import { StaticImageData } from "next/image"
 import { Service1Type } from "./Services1"
 import Service1Img from "@/images/services/service-1.webp"
-import ServiceCard from "./ServiceCardMx30"
+import ServiceCard from "./ServiceCard2"
 
 const services: Service1Type[] = [
   {
@@ -35,7 +35,7 @@ const services: Service1Type[] = [
   },
 ]
 
-const ServicesMx30 = () => {
+const Services2 = () => {
   return (
     <section className="flex flex-col gap-y-20 justify-center items-center mx-auto py-10 bg-zinc-900">
       <div>
@@ -55,4 +55,4 @@ const ServicesMx30 = () => {
   )
 }
 
-export default ServicesMx30
+export default Services2
