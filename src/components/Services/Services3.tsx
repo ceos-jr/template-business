@@ -1,10 +1,9 @@
 import Image from "next/image"
-import { StaticImageData } from "next/image"
 import { Service1Type } from "./Services1"
 
 
-type ServiceCardJuiaProps = Service1Type
-const ServiceCardJuia = ({name, image, description}:ServiceCardJuiaProps) => {
+type ServiceCard3Props = Service1Type
+const ServiceCard3 = ({name, image, description}:ServiceCard3Props) => {
   return(
           <div className="w-full group">
             <div className="h-64 rounded-lg relative overflow-hidden">
@@ -29,7 +28,7 @@ const ServiceCardJuia = ({name, image, description}:ServiceCardJuiaProps) => {
   )
 }
 
-const serviceList: ServiceCardJuiaProps[] = [
+const serviceList: ServiceCard3Props[] = [
   {
     name: "Service 1.0",
     description: "Vender barquinho",
@@ -52,18 +51,18 @@ const serviceList: ServiceCardJuiaProps[] = [
   }
 ]
 
-const ServicesJuia = () => {
+const Services3 = () => {
   return (
     <section className="bg-gray-300">
       <div className="container px-6 py-10 mx-auto flex flex-col items-center space-y-8">
         <h1 className="text-4xl font-bold tracking-wider text-gray-700" >Our Services</h1>
         <div className="grid grid-cols-1 gap-8 mb-12 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 w-full">
           {serviceList.map((service) => (
-            <ServiceCardJuia key={service.name} name={service.name} description={service.description} image={service.image}/>
+            <ServiceCard3 key={service.name} name={service.name} description={service.description} image={service.image}/>
           ))}
         </div> 
       </div>
     </section>
   )
 }
-export default ServicesJuia
+export default Services3
