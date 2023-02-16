@@ -12,7 +12,7 @@ const socialMedia = {
 
 export default function FooterLucas() {
   return (
-    <footer className="py-16 px-8 bg-gray-900 divide-y md:py-8">
+    <footer className="p-16 w-full bg-gray-900 divide-y md:py-8">
       <div className="flex flex-col gap-5 justify-evenly py-10 md:flex-row md:py-5">
         <div className="flex flex-col gap-4">
           <img

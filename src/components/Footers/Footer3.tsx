@@ -19,11 +19,11 @@ const socialMedia = {
 
 const FooterVic = () => {
   return (
-    <footer className="py-16 px-8 bg-slate-200 md:py-8">
+    <footer className="py-16 px-8 w-full md:py-8 bg-slate-200">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 gap-8 mb-8 text-sky-900 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 mb-8 md:grid-cols-4 text-sky-900">
           <div>
-            <h2 className=" mb-4 text-gray-400 text-2xl font-bold">Product</h2>
+            <h2 className="mb-4 text-2xl font-bold text-gray-400">Product</h2>
             <ul className="flex flex-col gap-4">
               <li>
                 <a
@@ -69,7 +69,7 @@ const FooterVic = () => {
           </div>
 
           <div>
-            <h2 className="mb-4 text-gray-400 text-2xl font-bold">Links</h2>
+            <h2 className="mb-4 text-2xl font-bold text-gray-400">Links</h2>
             <ul className="flex flex-col gap-4">
               <li>
                 <a
@@ -106,8 +106,8 @@ const FooterVic = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-4 text-gray-400 text-2xl font-bold">Contact</h2>
-            <ul className="flex flex-col gap-4 ">
+            <h2 className="mb-4 text-2xl font-bold text-gray-400">Contact</h2>
+            <ul className="flex flex-col gap-4">
               <li>(85) 7777 7777</li>
               <li>ceosadmin@gmail.com</li>
               <li>Campus do Pici - UFC, Fortaleza, CE</li>
@@ -120,7 +120,7 @@ const FooterVic = () => {
         <div className="my-4 h-0.5 bg-gray-400 rounded-full"></div>
         <div className="flex gap-8 justify-between text-rose-900">
           <h3>Copyright © 2023 Financial Business</h3>
-          <div className="flex gap-2 items-center text-3xl ">
+          <div className="flex gap-2 items-center text-3xl">
             {socialMedia.instagram && (
               <VicMediaLinkDark
                 link={socialMedia.instagram}
