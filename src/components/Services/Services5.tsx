@@ -1,4 +1,4 @@
-import VicServiceCard from "./VicServiceCard"
+import ServiceCard5 from "./ServiceCard5"
 import { StaticImageData } from "next/image"
 
 export type Service1Type = {
@@ -33,7 +33,7 @@ const services3: Service1Type[] = [
 
 
 
-const VicServices = () => {
+const Services5 = () => {
   return (
     <section className="container flex flex-col gap-y-16 bg-stone-200	 justify-center items-center mx-auto px-4 mt-24 divide-y divide-black md:py-8 ">
       <div>
@@ -47,7 +47,7 @@ const VicServices = () => {
       
       <div className="grid grid-cols-1 gap-8 p-12 w-full md:grid-cols-2 ">
         {services1.map((service) => (
-          <VicServiceCard key={service.name} {...service} />
+          <ServiceCard5 key={service.name} {...service} />
         ))}
         <div>
           <p className="text-xl italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti delectus et natus officia? Delectus, aliquid vero sunt voluptatem saepe voluptate quis amet, necessitatibus officia fugiat molestias earum dignissimos aspernatur."</p>
@@ -56,7 +56,7 @@ const VicServices = () => {
       
       <div className="grid grid-cols-1 gap-8 p-12 w-full md:grid-cols-2">
         {services2.map((service) => (
-          <VicServiceCard key={service.name} {...service} />
+          <ServiceCard5 key={service.name} {...service} />
         ))}
         <div>
           <p className="text-xl italic">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam officiis et amet beatae eveniet voluptatem autem consectetur quidem hic neque architecto molestiae, harum nemo distinctio omnis recusandae ad assumenda delectus!"</p>
@@ -65,7 +65,7 @@ const VicServices = () => {
       
       <div className="grid grid-cols-1 gap-8 p-12 w-full md:grid-cols-2">
         {services3.map((service) => (
-          <VicServiceCard key={service.name} {...service} />
+          <ServiceCard5 key={service.name} {...service} />
         ))}
         <div>
           <p className="text-xl italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, id? Laboriosam harum quis aliquid fugiat iure voluptatem praesentium culpa accusamus! Eaque ea unde voluptatem cum placeat quia necessitatibus labore neque!"</p>
@@ -75,4 +75,4 @@ const VicServices = () => {
   )
 }
 
-export default VicServices
+export default Services5

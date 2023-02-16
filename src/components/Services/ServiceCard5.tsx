@@ -1,5 +1,5 @@
 import ExportedImage from "next-image-export-optimizer"
-import { Service1Type } from "./VicServices"
+import { Service1Type } from "./Services5"
 
 type ServiceCard1Props = Service1Type
 
