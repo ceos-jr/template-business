@@ -21,7 +21,7 @@ const LinkText = ({ link, text }: { link: string; text: string }) => {
     <li>
       <a
         href={link}
-        className="text-white transition-colors duration-300  hover:text-violet-500"
+        className="text-white transition-colors duration-300 hover:text-violet-500"
       >
         {text}
       </a>
@@ -31,8 +31,8 @@ const LinkText = ({ link, text }: { link: string; text: string }) => {
 
 const Footer6 = () => {
   return (
-    <footer className="py-16 px-8 bg-zinc-900 md:py-8">
-      <div className="flex justify-between flex-col gap-8 md:flex-row items-center container">
+    <footer className="py-16 px-8 w-full md:py-8 bg-zinc-900">
+      <div className="container flex flex-col gap-8 justify-between items-center md:flex-row">
         <GiBookStorm className="text-6xl text-violet-700" />
         <div className="flex text-4xl">
           {socialMedia.instagram && (
@@ -52,7 +52,7 @@ const Footer6 = () => {
           )}
         </div>
       </div>
-      <ul className="py-4 flex flex-col justify-center items-center md:flex-row container gap-8">
+      <ul className="container flex flex-col gap-8 justify-center items-center py-4 md:flex-row">
         <LinkText link="000" text="Carrers" />
         <LinkText link="351" text="Help Center" />
         <LinkText link="352" text="Terms of Service" />
