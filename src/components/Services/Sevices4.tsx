@@ -8,22 +8,25 @@ export type ServiceLucasType = {
     link: string
 }
 
-const services: ServiceLucasType [] = [
-    {
+const services: ServiceLucasType[] = [
+  {
     name: "Sites Institucionais",
-    image: "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true",
+    image:
+      "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true",
     description: "Desenvolvemos a melhor solução para a sua empresa.",
     link: "#"
     },
     {
     name: "Sistemas",
-    image: "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true",
+    image:
+      "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true",
     description: "Desenvolvemos a melhor solução para a sua empresa.",
     link: "#"
     },
     {
     name: "Acessoria",
-    image: "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true",
+    image:
+      "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true",
     description: "Desenvolvemos a melhor solução para a sua empresa.",
     link: "#"
     }

@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { ServiceLucasType } from "./Sevices4"
-import { link } from "fs"
 
 type ServiceLucasTypeProps = ServiceLucasType
 
@@ -28,11 +27,13 @@ const ServiceCardLucas = ({name, image, description, link} : ServiceLucasTypePro
             before:bg-gray-500
             before:rounded-full
             before:[transition:_width_300ms_ease-in]
-            hover:before:w-full"> Saiba Mais</a>
-
-
-        </div>
-    )
+            hover:before:w-full"
+      >
+        {" "}
+        Saiba Mais
+      </a>
+    </div>
+  )
 }
 
 export default ServiceCardLucas
