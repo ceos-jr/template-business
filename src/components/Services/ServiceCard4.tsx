@@ -1,10 +1,11 @@
 import Image from "next/image"
-import { ServiceLucasType } from "./SevicesLucas"
+import { ServiceLucasType } from "./Sevices4"
+import { link } from "fs"
 
 type ServiceLucasTypeProps = ServiceLucasType
 
 
-const ServiceCardLucas = ({name, image, description} : ServiceLucasTypeProps) => {
+const ServiceCardLucas = ({name, image, description, link} : ServiceLucasTypeProps) => {
     return(
         <div className="flex flex-col overflow-hidden items-center bg-white rounded">
             <div className = "overflow-hidden w-full aspect-video relative">
@@ -20,7 +21,7 @@ const ServiceCardLucas = ({name, image, description} : ServiceLucasTypeProps) =>
                 <h1 className="text-xl font-bold text-gray-800">{name}</h1>
                 <p className="text-gray-500">{description}</p>
             </div>
-            <a href="#" className="font-medium relative px-0 py-1 [transtition:_color_300ms_ease-in] 
+            <a href={link} className="font-medium relative px-0 py-1 [transtition:_color_300ms_ease-in] 
             before:absolute 
             before:w-0 before:h-0.5 
             before:bottom-0 before:left-0
