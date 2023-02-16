@@ -11,7 +11,7 @@ export type Service1Type = {
 const services: Service1Type[] = [
   {
     name: "Servico 1",
-    image: "images/services/service-1.webp",
+    image: Service1Img,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit tortor sed augue suscipit tincidunt. Pellentesque vestibulum tellus gravida quam volutpat imperdiet.",
   },
@@ -34,7 +34,7 @@ const Services1 = () => {
     <section className="container flex flex-col gap-y-16 justify-center items-center mx-auto mt-24">
       <div>
         <h1 className="text-4xl font-bold text-gray-800">
-          Nossos <span className="text-primary-500">Servicos</span>
+          Our <span className="text-primary-500">Services</span>
         </h1>
         <p className="pt-4 font-light text-gray-800 uppercase">
           Adquira um dos nossos servicos

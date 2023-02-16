@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export && next-image-export-optimizer",
+    "export": "next export",
     "lint": "next lint",
     "type-check": "tsc --pretty --noEmit",
     "format": "prettier --ignore-path .gitignore --write ."
@@ -13,11 +13,9 @@
     "@next/font": "^13.1.6",
     "@react-google-maps/api": "^2.18.1",
     "next": "latest",
-    "next-image-export-optimizer": "^1.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.7.1",
-    "react-intersection-observer": "^9.4.1"
+    "react-icons": "^4.7.1"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
