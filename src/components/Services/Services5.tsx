@@ -4,34 +4,31 @@ import { StaticImageData } from "next/image"
 export type Service1Type = {
   name: string
   image: StaticImageData | string
-
 }
 
 const services1: Service1Type[] = [
   {
     name: "Feature 1",
-    image: "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true ",
+    image:
+      "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true ",
   },
-
 ]
 
 const services2: Service1Type[] = [
   {
     name: "Feature 2",
-    image: "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true ",
+    image:
+      "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true ",
   },
-
 ]
 
 const services3: Service1Type[] = [
   {
     name: "Feature 3",
-    image: "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true ",
+    image:
+      "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true ",
   },
-
 ]
-
-
 
 const Services5 = () => {
   return (
@@ -44,31 +41,46 @@ const Services5 = () => {
           Adquira um dos nossos servicos
         </p>
       </div>
-      
+
       <div className="grid grid-cols-1 gap-8 p-12 w-full md:grid-cols-2 ">
         {services1.map((service) => (
           <ServiceCard5 key={service.name} {...service} />
         ))}
         <div>
-          <p className="text-xl italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti delectus et natus officia? Delectus, aliquid vero sunt voluptatem saepe voluptate quis amet, necessitatibus officia fugiat molestias earum dignissimos aspernatur."</p>
+          <p className="text-xl italic">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            corrupti delectus et natus officia? Delectus, aliquid vero sunt
+            voluptatem saepe voluptate quis amet, necessitatibus officia fugiat
+            molestias earum dignissimos aspernatur."
+          </p>
         </div>
       </div>
-      
+
       <div className="grid grid-cols-1 gap-8 p-12 w-full md:grid-cols-2">
         {services2.map((service) => (
           <ServiceCard5 key={service.name} {...service} />
         ))}
         <div>
-          <p className="text-xl italic">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam officiis et amet beatae eveniet voluptatem autem consectetur quidem hic neque architecto molestiae, harum nemo distinctio omnis recusandae ad assumenda delectus!"</p>
+          <p className="text-xl italic">
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+            officiis et amet beatae eveniet voluptatem autem consectetur quidem
+            hic neque architecto molestiae, harum nemo distinctio omnis
+            recusandae ad assumenda delectus!"
+          </p>
         </div>
       </div>
-      
+
       <div className="grid grid-cols-1 gap-8 p-12 w-full md:grid-cols-2">
         {services3.map((service) => (
           <ServiceCard5 key={service.name} {...service} />
         ))}
         <div>
-          <p className="text-xl italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, id? Laboriosam harum quis aliquid fugiat iure voluptatem praesentium culpa accusamus! Eaque ea unde voluptatem cum placeat quia necessitatibus labore neque!"</p>
+          <p className="text-xl italic">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            id? Laboriosam harum quis aliquid fugiat iure voluptatem praesentium
+            culpa accusamus! Eaque ea unde voluptatem cum placeat quia
+            necessitatibus labore neque!"
+          </p>
         </div>
       </div>
     </section>
