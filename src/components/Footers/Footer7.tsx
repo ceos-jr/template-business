@@ -16,24 +16,51 @@ const socialMedia = {
   facebook: "https://pt-br.facebook.com/",
 }
 
-export default function FooterLucas(){
-    return(
-        <footer className="py-16 px-16 bg-gray-900 md:py-8 divide-y">
-            <div className = "flex justify-evenly py-10 md:py-5 flex-col gap-5 md:flex-row">
-                <div className = "flex flex-col gap-4">
-                    <img className = "w-36" src= "https://www.oowlish.com/wp-content/uploads/2021/03/oowlish-logo-white.svg"/>
-                    <p className = "text-white text-xs font-extralight w-64"> Because our mission is to give every company, no matter the size, the opportunity to innovate and help build a better future. </p>
-                </div>
-                <div className = "flex gap-10 text-white text-sm font-normal">
-                    <a className="transition-colors cursor-pointer hover:text-primary-600 duration-400"
-                  href="#"> OUR SERVICES </a>
-                    <a className="transition-colors cursor-pointer hover:text-primary-600 duration-400"
-                  href="#"> ABOUT US </a>
-                    <a className="transition-colors cursor-pointer hover:text-primary-600 duration-400"
-                  href="#"> WORK WITH US </a>
-                    <a className="transition-colors cursor-pointer hover:text-primary-600 duration-400"
-                  href="#"> CONTACT US </a>
-                </div>
+export default function FooterLucas() {
+  return (
+    <footer className="py-16 px-16 bg-gray-900 md:py-8 divide-y">
+      <div className="flex justify-evenly py-10 md:py-5 flex-col gap-5 md:flex-row">
+        <div className="flex flex-col gap-4">
+          <img
+            className="w-36"
+            src="https://www.oowlish.com/wp-content/uploads/2021/03/oowlish-logo-white.svg"
+          />
+          <p className="text-white text-xs font-extralight w-64">
+            {" "}
+            Because our mission is to give every company, no matter the size,
+            the opportunity to innovate and help build a better future.{" "}
+          </p>
+        </div>
+        <div className="flex gap-10 text-white text-sm font-normal">
+          <a
+            className="transition-colors cursor-pointer hover:text-primary-600 duration-400"
+            href="#"
+          >
+            {" "}
+            OUR SERVICES{" "}
+          </a>
+          <a
+            className="transition-colors cursor-pointer hover:text-primary-600 duration-400"
+            href="#"
+          >
+            {" "}
+            ABOUT US{" "}
+          </a>
+          <a
+            className="transition-colors cursor-pointer hover:text-primary-600 duration-400"
+            href="#"
+          >
+            {" "}
+            WORK WITH US{" "}
+          </a>
+          <a
+            className="transition-colors cursor-pointer hover:text-primary-600 duration-400"
+            href="#"
+          >
+            {" "}
+            CONTACT US{" "}
+          </a>
+        </div>
 
         <div className="flex-column text-start align-end md:text-end ">
           <a className="text-sm text-white"> FOLLOW US </a>
