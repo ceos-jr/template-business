@@ -56,7 +56,7 @@ const serviceList: ServiceCard3Props[] = [
 
 const Services3 = () => {
   return (
-    <section className="bg-gray-300">
+    <section id="services" className="bg-gray-300">
       <div className="container px-6 py-10 mx-auto flex flex-col items-center space-y-8">
         <h1 className="text-4xl font-bold tracking-wider text-gray-700">
           Our Services

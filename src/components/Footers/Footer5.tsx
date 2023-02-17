@@ -10,7 +10,7 @@ import JuliaMediaLinkDark from "./JuliaMediaLinkDark"
 
 const Footer5 = () => {
   return (
-    <footer className={styles.footer}>
+    <footer id="footer" className={styles.footer}>
       <div className={styles.firstsection}>
         <FaCube className={styles.cubo} />
         <div className={styles.contato}>
