@@ -1,24 +1,29 @@
 import ServiceCard5 from "./ServiceCard5"
 import { StaticImageData } from "next/image"
-import {Service1Type} from "./Services1"
+import { Service1Type } from "./Services1"
 
 const services1: Service1Type[] = [
   {
     name: "Feature 1",
-    image: "https://images.unsplash.com/photo-1676235496827-715660aca4f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    image:
+      "https://images.unsplash.com/photo-1676235496827-715660aca4f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
     // image: "https://images.unsplash.com/photo-1650845918019-19d14b959b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=?force=true ",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit."
+    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     name: "Feature 2",
-    image: "https://images.unsplash.com/photo-1676235496827-715660aca4f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quidem illo consequatur culpa porro nobis iste necessitatibus non quas, inventore sit autem fugit sunt explicabo quasi, magni sed quo? Optio?"
+    image:
+      "https://images.unsplash.com/photo-1676235496827-715660aca4f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quidem illo consequatur culpa porro nobis iste necessitatibus non quas, inventore sit autem fugit sunt explicabo quasi, magni sed quo? Optio?",
   },
   {
-    image: "https://images.unsplash.com/photo-1676235496827-715660aca4f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    image:
+      "https://images.unsplash.com/photo-1676235496827-715660aca4f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
     name: "Feature 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium reprehenderit in enim molestiae possimus, blanditiis ipsa recusandae. Saepe praesentium dolores neque accusantium nemo quis corporis voluptate alias ducimus provident."
-  }
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium reprehenderit in enim molestiae possimus, blanditiis ipsa recusandae. Saepe praesentium dolores neque accusantium nemo quis corporis voluptate alias ducimus provident.",
+  },
 ]
 
 const Services5 = () => {
