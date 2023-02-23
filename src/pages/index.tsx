@@ -4,6 +4,7 @@ import Head from "next/head"
 import SubHeader1 from "@/components/Nav-Header/SubHeader1"
 import Header1 from "@/components/Nav-Header/Header1"
 import Hero1 from "@/components/Heros/Hero1"
+import Services5 from "@/components/Services/Services5"
 import StatisticsSection from "@/components/Stats/Stats1"
 import Member1 from "@/components/Members/Members1"
 import Clients1 from "@/components/Clients/Clients1"
@@ -30,7 +31,7 @@ const Home: NextPage = () => {
       <NavbarJuia />
       <main className="w-full min-h-screen">
         <Hero1 />
-        <Services3 />
+        <Services5 />
         <StatisticsSection />
         <Clients1 />
         <Member1 />
