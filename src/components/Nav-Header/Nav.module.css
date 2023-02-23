@@ -1,0 +1,38 @@
+.navbar {
+    width: 100%;
+    height: 50px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #521c1c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    ;
+}
+
+.logo-container {
+    margin-left: 80px;
+}
+
+
+.logo-container span {
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.links-container {
+    margin-right: 80px;
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
