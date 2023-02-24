@@ -31,7 +31,7 @@ const Home: NextPage = () => {
       <NavbarJuia />
       <main className="w-full min-h-screen">
         <Hero1 />
-        <Services5 />
+        <Services3 />
         <StatisticsSection />
         <Clients1 />
         <Member1 />
