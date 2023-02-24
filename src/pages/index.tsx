@@ -9,7 +9,7 @@ import StatisticsSection from "@/components/Stats/Stats1"
 import Member1 from "@/components/Members/Members1"
 import Clients1 from "@/components/Clients/Clients1"
 import Contact1 from "@/components/Contact/Contact1"
-import Footer5 from "@/components/Footers/Footer5"
+import Footer7 from "@/components/Footers/Footer7"
 import Services3 from "@/components/Services/Services3"
 import NavbarJuia from "@/components/Nav-Header/NavbarJuia"
 
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         <Member1 />
         <Contact1 />
       </main>
-      <Footer5 />
+      <Footer7 />
     </div>
   )
 }

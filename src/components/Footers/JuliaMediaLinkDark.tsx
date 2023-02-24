@@ -9,7 +9,7 @@ const JuliaMediaLinkDark = ({
 }) => {
   return (
     <a href={link}>
-      <Icon className="p-1 rounded-lg transition-colors duration-300 cursor-pointer hover:text-gray-900 text-white hover:bg-teal-500" />
+      <Icon className="p-1 rounded-lg transition-colors duration-300 cursor-pointer hover:text-gray-900 text-white hover:bg-blue-600" />
     </a>
   )
 }
