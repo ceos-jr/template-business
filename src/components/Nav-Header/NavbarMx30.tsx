@@ -1,4 +1,4 @@
-import React from "react"
+import { useState } from "react"
 import { GiBookStorm } from "react-icons/gi"
 import { GiHamburgerMenu } from "react-icons/gi"
 
@@ -10,6 +10,8 @@ const Navbar = () => {
     { name: "TEAM", link: "/" },
     { name: "CONTACT", link: "/" },
   ]
+  const [open, setOpen] = useState(false)
+
   const toggleNavbar = () => {
     setOpen((previous) => !previous)
   }
@@ -39,8 +41,25 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <GiBookStorm className="text-3xl text-violet-700" />
           <button onClick={toggleNavbar}>
-            <GiHamburgerMenu className="text-xl text-gray-400" />
+            <GiHamburgerMenu className="text-xl text-violet-700" />
           </button>
+          <ul
+            className={
+              "absolute flex flex-col items-center -top-96 left-0 w-full bg-zinc-800 opacity-0 [transition:_opacity_300ms_200ms_ease-out] lg:hidden" +
+              (open ? " translate-y-[27rem] opacity-100" : "")
+            }
+          >
+            {Links.map((link) => (
+              <li key={link.name} className="md:ml-8 text-l">
+                <a
+                  href={link.link}
+                  className="text-gray-400 hover:text-violet-700 duration-500"
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
