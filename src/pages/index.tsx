@@ -11,8 +11,8 @@ import Clients1 from "@/components/Clients/Clients1"
 import Contact1 from "@/components/Contact/Contact1"
 import Footer6 from "@/components/Footers/Footer6"
 import Services4 from "@/components/Services/Sevices4"
+import Services2 from "@/components/Services/Services2"
 import NavbarMx30 from "@/components/Nav-Header/NavbarMx30"
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -21,10 +21,10 @@ const inter = Inter({
 const Home: NextPage = () => {
   return (
     <div className={`${inter.variable} flex flex-col items-center font-inter`}>
-      <NavbarMx30 />
       <main className="w-full min-h-screen">
+        <NavbarMx30 />
         <Hero1 />
-        <Services5 />
+        <Services2 />
         <StatisticsSection />
         <Clients1 />
         <Member1 />
