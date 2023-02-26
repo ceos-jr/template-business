@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`transition-all duration-500 bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-md w-full fixed z-10 top-0 left-0 ${
+      className={`transition-all duration-600 bg-gradient-to-r from-zinc-800 to-zinc-900 shadow-md w-full fixed z-10 top-0 left-0 ${
         scroll ? "opacity-100 " : "opacity-80 py-3 "
       }`}
     >
@@ -68,7 +68,7 @@ const Navbar = () => {
           </button>
         </div>
         <ul
-          className={`duration-300 overflow-hidden transition-all gap-3 absolute flex flex-col justify-between items-center w-full bg-zinc-800 ${
+          className={`duration-300 overflow-hidden transition-all gap-3 absolute flex flex-col justify-between items-center w-full bg-gradient-to-r from-purple-900 to-zinc-800 ${
             open ? "max-h-60 py-4 opacity-100" : "max-h-0 py-0 opacity-0"
           }`}
         >
