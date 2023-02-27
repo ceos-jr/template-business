@@ -1,8 +1,7 @@
 import type { NextPage } from "next"
 import { Inter } from "@next/font/google"
 import Head from "next/head"
-import SubHeader1 from "@/components/Nav-Header/SubHeader1"
-import Header1 from "@/components/Nav-Header/Header1"
+import Navbar5 from "@/components/Nav-Header/Navbar5"
 import Hero1 from "@/components/Heros/Hero1"
 import Services5 from "@/components/Services/Services5"
 import StatisticsSection from "@/components/Stats/Stats1"
@@ -26,8 +25,9 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className="w-full min-h-screen">
-        <Navbar3 />
+        <Navbar5 />
         <Hero1 />
         <Services2 />
         <StatisticsSection />
