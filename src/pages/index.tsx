@@ -21,13 +21,13 @@ const inter = Inter({
 const Home: NextPage = () => {
   return (
     <div className={`${inter.variable} flex flex-col items-center font-inter`}>
-      {/*<Head>
+      <Head>
         <title>Finance Business</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <SubHeader1 />
-  <Header1 /> */}
+  <Header1 /> 
       <NavbarJuia />
       <main className="w-full min-h-screen">
         <Hero1 />
