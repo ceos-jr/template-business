@@ -1,16 +1,16 @@
 {
-    "links": [
-        {
-            "label":"Home",
-            "href": "/home"
-        },
-        {
-            "label":"About us",
-            "href": "/about"
-        },
-        {
-            "label":"Contact",
-            "href": "/contact"
-        }
-    ]
+  "links": [
+    {
+      "label": "Home",
+      "href": "/home"
+    },
+    {
+      "label": "About us",
+      "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ]
 }

@@ -25,9 +25,9 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-     
-      <main className="w-full min-h-screen"> 
-        <Navbar5/>
+
+      <main className="w-full min-h-screen">
+        <Navbar5 />
         <Hero1 />
         <Services2 />
         <StatisticsSection />
