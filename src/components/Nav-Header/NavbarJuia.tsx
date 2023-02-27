@@ -29,7 +29,7 @@ const NavbarJuia = () => {
       style={{ backgroundColor: `${color}` }}
       className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
     >
-      <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
+      <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-blue-400">
         <Link href="/">
           <FaCat className="m-auto" style={{ color: `${textColor}` }} />
           <h1
@@ -41,16 +41,33 @@ const NavbarJuia = () => {
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4">
-            <Link href="/">Home</Link>
+            <Link href="/"  className="
+        underline
+        decoration-blue-500 decoration-[0.25rem]
+        motion-safe:transition-all motion-safe:duration-200
+        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50" >Home</Link>
+          </li>
+        
+          <li className="p-4">
+            <Link href="/#services" className="
+        underline
+        decoration-blue-500 decoration-[0.25rem]
+        motion-safe:transition-all motion-safe:duration-200
+        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50">Our Services</Link>
           </li>
           <li className="p-4">
-            <Link href="/#services">Our Services</Link>
+            <Link href="/seila" className="
+        underline
+        decoration-blue-500 decoration-[0.25rem]
+        motion-safe:transition-all motion-safe:duration-200
+        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50">About us</Link>
           </li>
           <li className="p-4">
-            <Link href="/seila">About us</Link>
-          </li>
-          <li className="p-4">
-            <Link href="/#footer">Contact us</Link>
+            <Link href="/#footer" className="
+        underline
+        decoration-blue-500 decoration-[0.25rem]
+        motion-safe:transition-all motion-safe:duration-200
+        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50">Contact us</Link>
           </li>
         </ul>
 

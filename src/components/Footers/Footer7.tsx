@@ -22,7 +22,7 @@ const Footer7 = () => {
       <div className="p-5 ">
         <ul>
           <p className="text-white font-bold drop-shadow-lg shadow-black text-3xl pb-6">
-            Contact <span className="text-blue-600 drop-shadow-lg">US</span>
+            Contact <span className="text-blue-600 drop-shadow-lg">Us</span>
           </p>
           <div className="flex gap-6 pb-5 text-4xl hover:cursor-pointer">
             {socialMedia.instagram && (
