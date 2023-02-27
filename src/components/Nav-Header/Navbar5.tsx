@@ -10,7 +10,7 @@ const links = [
   { name: "Contact", link: "/" },
   { name: "Features", link: "/" },
 ]
-const VicNavbar = () => {
+const Navbar5 = () => {
   const [isOpen, setisOpen] = useState(false)
   const [isScrolled, setisScrolled] = useState(false)
   function changeMe() {
@@ -29,7 +29,11 @@ const VicNavbar = () => {
   }, [])
 
   return (
-    <header className={`w-full transition-all duration-500 fixed z-10 top-0 left-0 bg-gray-200 px-2 py-4 ${isScrolled? "opacity-100":"opacity-80"}`}>
+    <header
+      className={`w-full transition-all duration-500 fixed z-10 top-0 left-0 bg-gray-200 px-2 py-4 ${
+        isScrolled ? "opacity-100" : "opacity-80"
+      }`}
+    >
       <nav className="hidden md:flex justify-between items-center ">
         <FaCube />
         <ul className="flex items-center gap-4">
@@ -65,4 +69,4 @@ const VicNavbar = () => {
   )
 }
 
-export default VicNavbar
+export default Navbar5
