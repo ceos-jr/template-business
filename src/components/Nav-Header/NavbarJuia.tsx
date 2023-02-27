@@ -41,33 +41,53 @@ const NavbarJuia = () => {
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
           <li className="p-4">
-            <Link href="/"  className="
+            <Link
+              href="/"
+              className="
         underline
         decoration-blue-500 decoration-[0.25rem]
         motion-safe:transition-all motion-safe:duration-200
-        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50" >Home</Link>
+        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50"
+            >
+              Home
+            </Link>
           </li>
-        
+
           <li className="p-4">
-            <Link href="/#services" className="
+            <Link
+              href="/#services"
+              className="
         underline
         decoration-blue-500 decoration-[0.25rem]
         motion-safe:transition-all motion-safe:duration-200
-        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50">Our Services</Link>
+        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50"
+            >
+              Our Services
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="/seila" className="
+            <Link
+              href="/seila"
+              className="
         underline
         decoration-blue-500 decoration-[0.25rem]
         motion-safe:transition-all motion-safe:duration-200
-        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50">About us</Link>
+        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50"
+            >
+              About us
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="/#footer" className="
+            <Link
+              href="/#footer"
+              className="
         underline
         decoration-blue-500 decoration-[0.25rem]
         motion-safe:transition-all motion-safe:duration-200
-        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50">Contact us</Link>
+        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50"
+            >
+              Contact us
+            </Link>
           </li>
         </ul>
 
