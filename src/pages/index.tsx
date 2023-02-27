@@ -12,7 +12,7 @@ import Contact1 from "@/components/Contact/Contact1"
 import Footer6 from "@/components/Footers/Footer6"
 import Services4 from "@/components/Services/Sevices4"
 import Services2 from "@/components/Services/Services2"
-import NavbarMx30 from "@/components/Nav-Header/NavbarMx30"
+import Navbar3 from "@/components/Nav-Header/Navbar3"
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full min-h-screen">
-        <NavbarMx30 />
+        <Navbar3 />
         <Hero1 />
         <Services2 />
         <StatisticsSection />
