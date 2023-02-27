@@ -34,11 +34,11 @@ const Navbar5 = () => {
         isScrolled ? "opacity-100" : "opacity-80"
       }`}
     >
-      <nav className="hidden md:flex justify-between items-center ">
+      <nav className="hidden justify-between items-center md:flex">
         <FaCube />
-        <ul className="flex items-center gap-4">
+        <ul className="flex gap-4 items-center">
           {links.map((item) => (
-            <li>
+            <li key={`item-${item.name}`}>
               <Link className="hover:text-red-900 text-md" href={item.link}>
                 {item.name}
               </Link>
@@ -46,7 +46,7 @@ const Navbar5 = () => {
           ))}
         </ul>
       </nav>
-      <nav className="bg-gray-200 relative w-full md:hidden">
+      <nav className="relative w-full bg-gray-200 md:hidden">
         <div className="flex justify-between">
           <FaCube />
           <RxHamburgerMenu onClick={() => setisOpen(!isOpen)} />
@@ -57,7 +57,7 @@ const Navbar5 = () => {
           }`}
         >
           {links.map((item) => (
-            <li>
+            <li key={`item-${item.name}`}>
               <Link className="hover:text-red-900 text-md" href={item.link}>
                 {item.name}
               </Link>
