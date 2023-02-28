@@ -11,7 +11,7 @@ import Contact1 from "@/components/Contact/Contact1"
 import Footer6 from "@/components/Footers/Footer6"
 import Services4 from "@/components/Services/Sevices4"
 import Services2 from "@/components/Services/Services2"
-import Navbar2 from "@/components/Nav-Header/NavBar2"
+import Navbar4 from "@/components/Nav-Header/NavBar4"
 import Footer4 from "@/components/Footers/Footer4"
 import Footer2 from "@/components/Footers/Footer2"
 
@@ -23,7 +23,7 @@ const inter = Inter({
 const Home: NextPage = () => {
   return (
     <div className={`${inter.variable} flex flex-col items-center font-inter`}>
-        <Navbar2/>
+        <Navbar4/>
       <main className="w-full min-h-screen">
         <Hero1 />
         <Services4/>
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         <Clients1 />
         <Member1 />
         <Contact1 />
-        <Footer2 />
+        <Footer4/>
       </main>
     </div>
   )
