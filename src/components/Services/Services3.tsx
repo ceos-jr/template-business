@@ -17,10 +17,10 @@ const ServiceCard3 = ({ name, image, description }: ServiceCard3Props) => {
           className="object-cover group-hover:scale-125 transition-transform duration-1000"
         />
       </div>
-      <h3 className="w-full h-6 mt-4 bg-gray-200 rounded-lg group-hover:scale-105 group-hover:font-bold group-hover:text-teal-700 transition-all text-center tracking-wider group-hover:cursor-pointer">
+      <h3 className="w-full h-6 mt-4 bg-gray-200 rounded-lg group-hover:scale-105 group-hover:font-bold group-hover:text-teal-700 transition-all text-center tracking-wider group-hover:cursor-pointer shadow-md shadow-teal-700">
         {name}
       </h3>
-      <p className="w-full p-4 mt-4 bg-gray-200 rounded-lg group-hover:scale-105 group-hover:text-teal-700 transition-all text-center tracking-wider group-hover:cursor-pointer">
+      <p className="w-full p-4 mt-4 bg-gray-200 rounded-lg group-hover:scale-105 group-hover:text-teal-700 transition-all text-center tracking-wider group-hover:cursor-pointer shadow-md shadow-teal-700">
         {description}
       </p>
     </div>
@@ -56,7 +56,7 @@ const serviceList: ServiceCard3Props[] = [
 
 const Services3 = () => {
   return (
-    <section className="bg-gray-300">
+    <section id="services" className="bg-gray-300">
       <div className="container px-6 py-10 mx-auto flex flex-col items-center space-y-8">
         <h1 className="text-4xl font-bold tracking-wider text-gray-700">
           Our Services
