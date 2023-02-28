@@ -24,6 +24,11 @@ const NavItemData = [
   },
 ]
 
+export type NavItemData = {
+  text: string
+  url: string
+}
+
 interface NavItemProps {
   text: string
   url: string
