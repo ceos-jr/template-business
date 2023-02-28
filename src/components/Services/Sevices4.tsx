@@ -34,7 +34,10 @@ const services: ServiceLucasType[] = [
 
 const Services4 = () => {
   return (
-    <section className="container flex flex-col justify-center items-center mx-auto mb-12">
+    <section
+      id="services"
+      className="container flex flex-col justify-center items-center mx-auto mb-12"
+    >
       <div className="flex flex-col gap-3 text-gray-800 text-center mt-12">
         <h1 className="text-4xl font-bold"> Our Services </h1>
         <p className="text-lg">
