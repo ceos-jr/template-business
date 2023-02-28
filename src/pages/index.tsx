@@ -1,9 +1,9 @@
 import type { NextPage } from "next"
 import { Inter } from "@next/font/google"
 import Head from "next/head"
-import SubHeader1 from "@/components/Nav-Header/SubHeader1"
-import Header1 from "@/components/Nav-Header/Header1"
+import Navbar5 from "@/components/Nav-Header/Navbar5"
 import Hero1 from "@/components/Heros/Hero1"
+import Services5 from "@/components/Services/Services5"
 import StatisticsSection from "@/components/Stats/Stats1"
 import Member1 from "@/components/Members/Members1"
 import Clients1 from "@/components/Clients/Clients1"
@@ -14,6 +14,7 @@ import Services2 from "@/components/Services/Services2"
 import Navbar4 from "@/components/Nav-Header/NavBar4"
 import Footer4 from "@/components/Footers/Footer4"
 import Footer2 from "@/components/Footers/Footer2"
+import Navbar3 from "@/components/Nav-Header/Navbar3"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,8 +24,13 @@ const inter = Inter({
 const Home: NextPage = () => {
   return (
     <div className={`${inter.variable} flex flex-col items-center font-inter`}>
-        <Navbar4/>
+      <Head>
+        <title>Finance Business</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <main className="w-full min-h-screen">
+        <Navbar5 />
         <Hero1 />
         <Services4/>
         <StatisticsSection />

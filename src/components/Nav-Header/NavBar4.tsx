@@ -1,7 +1,6 @@
 import { GiHamburgerMenu } from "react-icons/gi"
 import Image from "next/image"
 import { useState, useRef, useEffect } from "react"
-import useScrollLock from "../../../hooks/useScrollLock"
 import { NavItemData } from "./Navbar1"
 import Link from "next/link"
 
@@ -42,7 +41,6 @@ const NavItemMobile = ({ text, url }: NavItemProps) => {
 const NavBar = () => {
   const [open, setOpen] = useState(false)  
   const [show, setShow] = useState(true)
-  const { lockScroll, unlockScroll } = useScrollLock()
   const heightRef = useRef(0)
 
   useEffect(() => {
