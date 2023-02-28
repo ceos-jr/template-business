@@ -39,7 +39,7 @@ const NavItemMobile = ({ text, url }: NavItemProps) => {
 }
 
 const NavBar = () => {
-  const [open, setOpen] = useState(false)  
+  const [open, setOpen] = useState(false)
   const [show, setShow] = useState(true)
   const heightRef = useRef(0)
 
@@ -67,7 +67,11 @@ const NavBar = () => {
     setOpen((previous) => !previous)
   }
   return (
-    <nav className={`sticky top-0 w-full z-10 [transition:_transform_350ms_ease-out] ${show? "" :"-translate-y-48"}`}>
+    <nav
+      className={`sticky top-0 w-full z-10 [transition:_transform_350ms_ease-out] ${
+        show ? "" : "-translate-y-48"
+      }`}
+    >
       <div className="hidden mx-auto md:flex bg-white relative items-center justify-between">
         <Link href={"#"}>
           <Image
@@ -116,11 +120,11 @@ const NavBar = () => {
             (open ? " translate-y-[28rem] opacity-100" : "")
           }
         >
-            {NavItens.map((NavItens,index) => (
-                <li key={index}>
-                    <a href={NavItens.url}> {NavItens.text} </a>
-                </li>
-            ))}
+          {NavItens.map((NavItens, index) => (
+            <li key={index}>
+              <a href={NavItens.url}> {NavItens.text} </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

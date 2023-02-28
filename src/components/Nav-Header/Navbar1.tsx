@@ -29,12 +29,10 @@ export type NavItemData = {
   url: string
 }
 
-
 interface NavItemProps {
   text: string
   url: string
 }
-
 
 const NavItemMobile = ({ text, url }: NavItemProps) => {
   return (

@@ -32,12 +32,12 @@ const Home: NextPage = () => {
       <main className="w-full min-h-screen">
         <Navbar5 />
         <Hero1 />
-        <Services4/>
+        <Services4 />
         <StatisticsSection />
         <Clients1 />
         <Member1 />
         <Contact1 />
-        <Footer4/>
+        <Footer4 />
       </main>
     </div>
   )
