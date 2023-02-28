@@ -2,7 +2,7 @@ import Link from "next/link"
 import React, { useState, useEffect } from "react"
 import { FaCat, FaBars, FaTimes } from "react-icons/fa"
 
-const NavbarJuia = () => {
+const Navbar2 = () => {
   const [nav, setNav] = useState(false)
   const [color, setColor] = useState("transparent")
   const [textColor, setTextColor] = useState("white")
@@ -27,14 +27,14 @@ const NavbarJuia = () => {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
+      className="fixed top-0 left-0 z-10 w-full duration-300 ease-in"
     >
-      <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-blue-400">
+      <div className="flex justify-between items-center p-4 m-auto text-blue-400 max-w-[1240px]">
         <Link href="/">
           <FaCat className="m-auto" style={{ color: `${textColor}` }} />
           <h1
             style={{ color: `${textColor}` }}
-            className="font-bold text-4xl drop-shadow-lg shadow-black"
+            className="text-4xl font-bold drop-shadow-lg shadow-black"
           >
             Meow
           </h1>
@@ -43,11 +43,7 @@ const NavbarJuia = () => {
           <li className="p-4">
             <Link
               href="/"
-              className="
-        underline
-        decoration-blue-500 decoration-[0.25rem]
-        motion-safe:transition-all motion-safe:duration-200
-        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50"
+              className="underline decoration-blue-500 decoration-[0.25rem] motion-safe:transition-all motion-safe:duration-200 hover:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-[0.5rem] focus:decoration-blue-500/50"
             >
               Home
             </Link>
@@ -56,11 +52,7 @@ const NavbarJuia = () => {
           <li className="p-4">
             <Link
               href="/#services"
-              className="
-        underline
-        decoration-blue-500 decoration-[0.25rem]
-        motion-safe:transition-all motion-safe:duration-200
-        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50"
+              className="underline decoration-blue-500 decoration-[0.25rem] motion-safe:transition-all motion-safe:duration-200 hover:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-[0.5rem] focus:decoration-blue-500/50"
             >
               Our Services
             </Link>
@@ -68,11 +60,7 @@ const NavbarJuia = () => {
           <li className="p-4">
             <Link
               href="/seila"
-              className="
-        underline
-        decoration-blue-500 decoration-[0.25rem]
-        motion-safe:transition-all motion-safe:duration-200
-        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50"
+              className="underline decoration-blue-500 decoration-[0.25rem] motion-safe:transition-all motion-safe:duration-200 hover:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-[0.5rem] focus:decoration-blue-500/50"
             >
               About us
             </Link>
@@ -80,11 +68,7 @@ const NavbarJuia = () => {
           <li className="p-4">
             <Link
               href="/#footer"
-              className="
-        underline
-        decoration-blue-500 decoration-[0.25rem]
-        motion-safe:transition-all motion-safe:duration-200
-        hover:decoration-[0.5rem] focus:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-blue-500/50"
+              className="underline decoration-blue-500 decoration-[0.25rem] motion-safe:transition-all motion-safe:duration-200 hover:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-[0.5rem] focus:decoration-blue-500/50"
             >
               Contact us
             </Link>
@@ -92,18 +76,18 @@ const NavbarJuia = () => {
         </ul>
 
         {/* Mobile Button */}
-        <div onClick={handleNav} className="block sm:hidden z-10">
+        <div onClick={handleNav} className="block z-10 sm:hidden">
           {nav ? (
             <FaTimes
               size={30}
               style={{ color: `${textColor}` }}
-              className="drop-shadow-lg shadow-black hover:cursor-pointer"
+              className="hover:cursor-pointer drop-shadow-lg shadow-black"
             />
           ) : (
             <FaBars
               size={30}
               style={{ color: `${textColor}` }}
-              className="drop-shadow-lg shadow-black hover:cursor-pointer"
+              className="hover:cursor-pointer drop-shadow-lg shadow-black"
             />
           )}
         </div>
@@ -130,13 +114,13 @@ const NavbarJuia = () => {
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:font-extrabold "
+              className="p-4 text-4xl hover:font-extrabold"
             >
               <Link href="/seila">About us</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:font-extrabold "
+              className="p-4 text-4xl hover:font-extrabold"
             >
               <Link href="/#footer">Contact us</Link>
             </li>
@@ -147,4 +131,4 @@ const NavbarJuia = () => {
   )
 }
 
-export default NavbarJuia
+export default Navbar2
