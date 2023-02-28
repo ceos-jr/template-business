@@ -11,7 +11,11 @@ import Contact1 from "@/components/Contact/Contact1"
 import Footer6 from "@/components/Footers/Footer6"
 import Services4 from "@/components/Services/Sevices4"
 import Services2 from "@/components/Services/Services2"
+import Navbar4 from "@/components/Nav-Header/NavBar4"
+import Footer4 from "@/components/Footers/Footer4"
+import Footer2 from "@/components/Footers/Footer2"
 import Navbar3 from "@/components/Nav-Header/Navbar3"
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -25,17 +29,16 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className="w-full min-h-screen">
         <Navbar5 />
         <Hero1 />
-        <Services2 />
+        <Services4 />
         <StatisticsSection />
         <Clients1 />
         <Member1 />
         <Contact1 />
+        <Footer4 />
       </main>
-      <Footer6 />
     </div>
   )
 }
