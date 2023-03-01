@@ -33,19 +33,22 @@ const HeroJuia = () => {
         modules={[Keyboard, Pagination, Navigation]}
         //className="mySwiper"
       >
+        <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center w-32 h-32 relative overflow-hidden">
+          <Image
+            src={`/images/Hero/gatobgazul.webp`}
+            alt="gato azul"
+            className="object-cover"
+            fill
+          ></Image>
+        </SwiperSlide>
         <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center">
-          <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center">
-            Slide1
-          </SwiperSlide>
-          <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center">
-            Slide 2
-          </SwiperSlide>
-          <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center">
-            Slide 3
-          </SwiperSlide>
-          <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center">
-            Slide 4
-          </SwiperSlide>
+          Slide 2
+        </SwiperSlide>
+        <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center">
+          Slide 3
+        </SwiperSlide>
+        <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center">
+          Slide 4
         </SwiperSlide>
       </Swiper>
     </section>
