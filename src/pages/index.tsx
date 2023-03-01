@@ -8,7 +8,8 @@ import Clients1 from "@/components/Clients/Clients1"
 import Contact1 from "@/components/Contact/Contact1"
 import Footer7 from "@/components/Footers/Footer7"
 import Services4 from "@/components/Services/Sevices4"
-import Navbar2 from "@/components/Nav-Header/NavBar2"
+import Navbar3 from "@/components/Nav-Header/Navbar3"
+import HeroMx30 from "@/components/Heros/HeroMx30"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,8 +25,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full min-h-screen">
-        <Navbar2 />
-        <Hero1 />
+        <Navbar3 />
+        <HeroMx30 />
         <Services4 />
         <StatisticsSection />
         <Clients1 />

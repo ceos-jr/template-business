@@ -1,0 +1,9 @@
+    .swiper-button-prev{
+    left:30;
+    color:rgb(255, 255, 255);
+ } 
+  .swiper-button-next{
+    right:30;
+    color:rgb(255,255,255);
+  } 
+}
