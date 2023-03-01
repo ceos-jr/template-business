@@ -1,5 +1,5 @@
 import Image from "next/image"
-import React, { useRef, useState } from "react"
+import React from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/pagination"
@@ -11,7 +11,13 @@ interface SlideProps {
   image: string
 }
 
-const List: SlideProps[] = [
+const Slide = ({ name, image }: SlideProps) => {
+  return (
+    <Image src={image} alt={`${name} image`} className="object-cover" fill />
+  )
+}
+
+const SeMeChamoMXVagabundoDeixareiIssoDoJeitoQueTa: SlideProps[] = [
   {
     name: "image1",
     image:
@@ -28,6 +34,10 @@ const HeroMx30 = () => {
   return (
     <section>
       <Swiper
+        style={{
+          //@ts-ignore
+          "--swiper-theme-color": "#FFBA08",
+        }}
         className="w-full h-screen bg-zinc-800"
         spaceBetween={30}
         centeredSlides={true}
@@ -40,19 +50,13 @@ const HeroMx30 = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        //className="mySwiper"
       >
-        {List.map((item) => (
+        {SeMeChamoMXVagabundoDeixareiIssoDoJeitoQueTa.map((item) => (
           <SwiperSlide
             key={item.name}
-            className="text-center text-lg bg-zinc-800 flex justify-center items-center w-full h-full relative overflow-hidden aspect-video"
+            className="flex overflow-hidden relative justify-center items-center w-full h-full text-lg text-center bg-zinc-800 aspect-video"
           >
-            <Image
-              src={item.image}
-              alt={`${item.name} image`}
-              className="object-cover"
-              fill
-            />
+            <Slide name={item.name} image={item.image} />
           </SwiperSlide>
         ))}
       </Swiper>
