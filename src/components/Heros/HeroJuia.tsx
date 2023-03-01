@@ -7,20 +7,27 @@ import "swiper/css/pagination"
 import "swiper/css/navigation"
 import { Keyboard, Pagination, Navigation } from "swiper"
 
-{
-  /*const photos = [
-    "gatobgazul.webp",
-    "gatoehomi.webp",
-    "gatoemuie.webp",
-    "gatonatalino.webp"
-]*/
+interface SlideProps {
+  titulo: string
+  img: string
 }
+const List: SlideProps[] = [
+  {
+    titulo: "gato",
+    img: "/images/Hero/gatobgazul.webp",
+  },
+  {
+    titulo: "gato2",
+    img: "/images/Hero/gatobgazul.webp",
+  },
+]
 
+  
 const HeroJuia = () => {
   return (
     <section>
       <Swiper
-        className="w-full h-full"
+        className="w-full h-screen"
         slidesPerView={1}
         spaceBetween={30}
         keyboard={{
@@ -31,25 +38,18 @@ const HeroJuia = () => {
         }}
         navigation={true}
         modules={[Keyboard, Pagination, Navigation]}
-        //className="mySwiper"
       >
-        <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center w-32 h-32 relative overflow-hidden">
+        {List.map((item) => (
+          <SwiperSlide key={item.titulo} className="text-center text-lg bg-white flex justify-center items-center w-full h-full relative overflow-hidden">
           <Image
-            src={`/images/Hero/gatobgazul.webp`}
-            alt="gato azul"
+            src={item.img}
+            alt={`${item.titulo} image`}
             className="object-cover"
             fill
-          ></Image>
+          />
+          
         </SwiperSlide>
-        <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center">
-          Slide 2
-        </SwiperSlide>
-        <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center">
-          Slide 3
-        </SwiperSlide>
-        <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center">
-          Slide 4
-        </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   )
