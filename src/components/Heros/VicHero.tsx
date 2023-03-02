@@ -23,30 +23,31 @@ import { Keyboard, Pagination, Navigation } from "swiper"
 
 interface SlideProps {
     titulo: string
-    img: string
+    image: string
   }
   const List: SlideProps[] = [
     {
-      titulo: "There's a CAT!!",
-      img: "https://raw.githubusercontent.com/vercel/next.js/canary/examples/image-component/public/cat.jpg",
+      titulo: "CAT",
+      image: "https://raw.githubusercontent.com/vercel/next.js/canary/examples/image-component/public/cat.jpg",
+    }, 
+    {
+      titulo: "DOG",
+      image: "https://github.com/vercel/next.js/blob/canary/examples/image-component/public/dog.jpg?raw=true",
     },
     {
-      titulo: "There's a DOG!!",
-      img: "https://github.com/vercel/next.js/blob/canary/examples/image-component/public/dog.jpg?raw=true",
+      titulo: "MOUNTAIN",
+      image: "https://github.com/vercel/next.js/blob/canary/examples/image-component/public/mountains.jpg?raw=true",
     },
-    {
-        titulo: "There's a MOUNTAIN!!",
-        img: "https://github.com/vercel/next.js/blob/canary/examples/image-component/public/mountains.jpg?raw=true",
-      },
   ]
 
   const Hero = () => {
     return (
       <section>
         <Swiper
+          effect="coverflow"
           className="w-full h-screen"
-          slidesPerView={1}
-          spaceBetween={30}
+          slidesPerView={2}
+          spaceBetween={0}
           keyboard={{
             enabled: true,
           }}
@@ -57,9 +58,9 @@ interface SlideProps {
           modules={[Keyboard, Pagination, Navigation]}
         >
           {List.map((item) => (
-            <SwiperSlide key={item.titulo} className="text-center text-lg bg-white flex justify-center items-center w-full h-full relative overflow-hidden">
+            <SwiperSlide key={item.titulo} className="text-center text-lg bg-transparent flex justify-center items-center w-full h-full relative overflow-hidden">
             <Image
-              src={item.img}
+              src={item.image}
               alt={`${item.titulo} image`}
               className="object-cover"
               fill
