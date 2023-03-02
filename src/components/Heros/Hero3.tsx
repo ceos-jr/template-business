@@ -60,6 +60,7 @@ const HeroJuia = () => {
               alt={`${item.titulo} image`}
               className="object-cover"
               fill
+              priority
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 sm:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/3 h-auto bg-white bg-opacity-50 rounded-lg shadow-md text-center">
               <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold py-4 font-sans drop-shadow-lg shadow-black">
