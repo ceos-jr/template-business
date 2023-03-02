@@ -1,16 +1,3 @@
-/*import Carousel from "../Carousel/Carousel"
-
-const Hero = () => {
-  return (
-    <section className="h-[95vh] w-full bg-white z-0 md:h-screen">
-      <Carousel />
-    </section>
-  )
-}
-
-export default Hero */
-
-
 import React, { useRef, useState } from "react"
 import Image from "next/image"
 
@@ -18,7 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
-import { Keyboard, Pagination, Navigation } from "swiper"
+import "swiper/css/effect-coverflow"
+import { Keyboard, Pagination, Navigation ,EffectCoverflow} from "swiper"
 
 
 interface SlideProps {
@@ -54,8 +42,14 @@ interface SlideProps {
           pagination={{
             clickable: true,
           }}
+
           navigation={true}
-          modules={[Keyboard, Pagination, Navigation]}
+          modules={[Keyboard, Pagination, Navigation, EffectCoverflow]}
+          
+          coverflowEffect={{
+            rotate: 30,
+            slideShadows: true,
+          }}
         >
           {List.map((item) => (
             <SwiperSlide key={item.titulo} className="text-center text-lg bg-transparent flex justify-center items-center w-full h-full relative overflow-hidden">
@@ -74,27 +68,5 @@ interface SlideProps {
   }
   
 export default Hero
-/*export default () => {
-    return (
-      <Swiper
-        effect="coverflow"
-        spaceBetween={500}
-        slidesPerView={'auto'}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
-      ><Image
-          src={image}
-          alt={`service ${name} image`}
-          className="object-cover"
-          sizes="(max-width: 1538px) 80vw, 1000px"
-          fill
-        />
-        <div className="container mx-auto py- px-4"></div>
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        ...
-      </Swiper>
-    );
-  }; */
+
+
