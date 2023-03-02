@@ -30,7 +30,7 @@ const List: SlideProps[] = [
   },
 ]
 
-const HeroJuia = () => {
+const Hero3 = () => {
   return (
     <section>
       <Swiper
@@ -74,4 +74,4 @@ const HeroJuia = () => {
   )
 }
 
-export default HeroJuia
+export default Hero3
