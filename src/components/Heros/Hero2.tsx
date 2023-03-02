@@ -13,7 +13,13 @@ interface SlideProps {
 
 const Slide = ({ name, image }: SlideProps) => {
   return (
-    <Image src={image} alt={`${name} image`} className="object-cover" fill />
+    <Image
+      src={image}
+      priority
+      alt={`${name} image`}
+      className="object-cover"
+      fill
+    />
   )
 }
 
@@ -30,7 +36,7 @@ const List: SlideProps[] = [
   },
 ]
 
-const HeroMx30 = () => {
+const Hero2 = () => {
   return (
     <section>
       <Swiper
@@ -63,4 +69,4 @@ const HeroMx30 = () => {
     </section>
   )
 }
-export default HeroMx30
+export default Hero2
