@@ -15,17 +15,17 @@ interface SlideProps {
 const List: SlideProps[] = [
   {
     titulo: "gato",
-    img: "/images/Hero/gatonachuva.webp",
+    img: "https://cdn.dribbble.com/users/35617/screenshots/13941162/media/dbf39de07d6d8b1d1ef2396a09f7fd8a.png",
     texto: "Get the purrrfect boat for your cat!",
   },
   {
     titulo: "gato2",
-    img: "/images/Hero/gatodefone.webp",
+    img: "https://cdn.dribbble.com/users/35617/screenshots/13882472/media/740f0a21463ca7bb51a9bf9094839837.jpg",
     texto: "You're probably asking yourself: Why?",
   },
   {
     titulo: "gato3",
-    img: "/images/Hero/gatogiga.webp",
+    img: "https://cdn.dribbble.com/users/35617/screenshots/12118477/media/9fe61ee267c4db2c3d6bc46e3a1c2fdd.jpg",
     texto: ". . . But you should ask: WHY NOT?!",
   },
 ]
@@ -58,7 +58,7 @@ const HeroJuia = () => {
             <Image
               src={item.img}
               alt={`${item.titulo} image`}
-              className="object-cover lg:object-fill"
+              className="object-cover"
               fill
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 sm:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/3 h-auto bg-white bg-opacity-50 rounded-lg shadow-md text-center">
