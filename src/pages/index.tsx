@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 import { Inter } from "@next/font/google"
 import Head from "next/head"
-import Hero1 from "@/components/Heros/Hero1"
+import VicHero from "@/components/Heros/VicHero"
 import StatisticsSection from "@/components/Stats/Stats1"
 import Member1 from "@/components/Members/Members1"
 import Clients1 from "@/components/Clients/Clients1"
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="w-full min-h-screen">
         <Navbar2 />
-        <Hero1 />
+        <VicHero />
         <Services4 />
         <StatisticsSection />
         <Clients1 />
