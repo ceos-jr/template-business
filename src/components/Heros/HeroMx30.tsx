@@ -21,12 +21,12 @@ const List: SlideProps[] = [
   {
     name: "image1",
     image:
-      "https://images.unsplash.com/photo-1575237402880-4b496a83ae04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8?=force=true",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&dl=campbell-3ZUsNJhi_Ik-unsplash.jpg&w=1920&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
   },
   {
     name: "image2",
     image:
-      "https://images.unsplash.com/photo-1673997058976-497b8e85f3f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto&force=true",
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&dl=florian-olivo-4hbJ-eymZ1o-unsplash.jpg&w=1920&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
   },
 ]
 
