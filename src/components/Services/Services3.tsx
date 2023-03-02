@@ -17,10 +17,10 @@ const ServiceCard3 = ({ name, image, description }: ServiceCard3Props) => {
           className="object-cover group-hover:scale-125 transition-transform duration-1000"
         />
       </div>
-      <h3 className="w-full h-6 mt-4 bg-gray-200 rounded-lg group-hover:scale-105 group-hover:font-bold group-hover:text-teal-700 transition-all text-center tracking-wider group-hover:cursor-pointer shadow-md shadow-teal-700">
+      <h3 className="w-full h-6 mt-4 bg-gray-200 rounded-lg group-hover:scale-105 group-hover:font-bold group-hover:text-pink-400 transition-all text-center tracking-wider group-hover:cursor-pointer shadow-md shadow-pink-300">
         {name}
       </h3>
-      <p className="w-full p-4 mt-4 bg-gray-200 rounded-lg group-hover:scale-105 group-hover:text-teal-700 transition-all text-center tracking-wider group-hover:cursor-pointer shadow-md shadow-teal-700">
+      <p className="w-full p-4 mt-4 bg-gray-200 rounded-lg group-hover:scale-105 group-hover:text-teal-700 transition-all text-center tracking-wider group-hover:cursor-pointer shadow-md shadow-pink-300">
         {description}
       </p>
     </div>
@@ -56,9 +56,9 @@ const serviceList: ServiceCard3Props[] = [
 
 const Services3 = () => {
   return (
-    <section id="services" className="bg-gray-300">
+    <section id="services" className="bg-yellow-200">
       <div className="container px-6 py-10 mx-auto flex flex-col items-center space-y-8">
-        <h1 className="text-4xl font-bold tracking-wider text-gray-700">
+        <h1 className="text-4xl font-bold tracking-wider text-pink-400 drop-shadow-lg shadow-black">
           Our Services
         </h1>
         <div className="grid grid-cols-1 gap-8 mb-12 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 w-full">
