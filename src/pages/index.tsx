@@ -7,7 +7,7 @@ import Member1 from "@/components/Members/Members1"
 import Clients1 from "@/components/Clients/Clients1"
 import Contact1 from "@/components/Contact/Contact1"
 import Footer7 from "@/components/Footers/Footer7"
-import Services4 from "@/components/Services/Sevices4"
+import Services3 from "@/components/Services/Services3"
 import Navbar2 from "@/components/Nav-Header/NavBar2"
 
 const inter = Inter({
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       <main className="w-full min-h-screen">
         <Navbar2 />
         <HeroJuia />
-        <Services4 />
+        <Services3 />
         <StatisticsSection />
         <Clients1 />
         <Member1 />
