@@ -16,6 +16,10 @@ import Navbar4 from "@/components/Nav-Header/NavBar4"
 import Navbar5 from "@/components/Nav-Header/Navbar5"
 import Services4 from "@/components/Services/Sevices4"
 import Hero2 from "@/components/Heros/Hero2"
+import Hero5 from "@/components/Heros/Hero5"
+import Footer1 from "@/components/Footers/Footer1"
+import Footer2 from "@/components/Footers/Footer2"
+import Footer4 from "@/components/Footers/Footer4"
 
 
 const inter = Inter({
@@ -33,14 +37,14 @@ const Home: NextPage = () => {
       </Head>
       <main className="w-full min-h-screen">
         <Navbar4 />
-        <Hero2/>
+        <Hero5/>
         <Services4 />
         <StatisticsSection />
         <Clients1 />
         <Member1 />
         <Contact1 />
       </main>
-      <Footer7 />
+      <Footer4/>
     </div>
   )
 }
