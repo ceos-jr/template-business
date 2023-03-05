@@ -18,20 +18,20 @@ const List: SlideProps[] = [
     titulo: "CAT",
     image:
       "https://raw.githubusercontent.com/vercel/next.js/canary/examples/image-component/public/cat.jpg",
-    descricao: 'Whiskas'  
+    descricao: "Whiskas",
   },
   {
     titulo: "DOG",
     image:
       "https://github.com/vercel/next.js/blob/canary/examples/image-component/public/dog.jpg?raw=true",
-    descricao: 'Royal Canin'
+    descricao: "Royal Canin",
   },
   {
     titulo: "MOUNTAIN",
     image:
       "https://github.com/vercel/next.js/blob/canary/examples/image-component/public/mountains.jpg?raw=true",
-    descricao: 'Mountain'
- },
+    descricao: "Mountain",
+  },
 ]
 
 const Hero = () => {
@@ -70,11 +70,11 @@ const Hero = () => {
               33vw"
               priority
             />
-           <div className="absolute md:container md:mx-auto bg-inherit">
+            <div className="absolute md:container md:mx-auto bg-inherit">
               <h1 className=" md:text-center text-8xl font-bold font-sans px-32 py-32 text-white">
                 {item.descricao}
-                </h1>
-           </div>
+              </h1>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
