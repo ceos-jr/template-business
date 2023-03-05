@@ -2,7 +2,7 @@ import type { NextPage } from "next"
 import { Inter } from "@next/font/google"
 import Head from "next/head"
 import Hero3 from "@/components/Heros/Hero3"
-import StatisticsSection from "@/components/Stats/Stats1"
+import VicStats from "@/components/Stats/VicStats"
 import Member1 from "@/components/Members/Members1"
 import Clients1 from "@/components/Clients/Clients1"
 import Contact1 from "@/components/Contact/Contact1"
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <Navbar2 />
         <Hero3 />
         <Services3 />
-        <StatisticsSection />
+        <VicStats />
         <Clients1 />
         <Member1 />
         <Contact1 />
