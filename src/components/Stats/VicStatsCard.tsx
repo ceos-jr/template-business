@@ -4,6 +4,9 @@ import { Statistic } from "./Stats1"
 export interface StatisticsCardProps extends Statistic {
   speed: number
 }
+
+
+
 const StatisticCard = ({ number, name, speed }: StatisticsCardProps) => {
   const [value, setValue] = useState(0)
 
@@ -30,5 +33,7 @@ const StatisticCard = ({ number, name, speed }: StatisticsCardProps) => {
     </div>
   )
 }
+
+
 
 export default StatisticCard
