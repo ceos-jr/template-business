@@ -37,7 +37,7 @@ const StatisticsSection = () => {
           {statistics.map((statistic) => (
             <StatisticCard key={statistic.name} {...statistic} />
           ))}
-        </div>
+        </div> 
       </div>
     </section>
   )
