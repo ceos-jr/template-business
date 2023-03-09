@@ -30,7 +30,7 @@ const List: SlideProps[] = [
     titulo: "MOUNTAIN",
     image:
       "https://github.com/vercel/next.js/blob/canary/examples/image-component/public/mountains.jpg?raw=true",
-    descricao: "Mountain",
+    descricao: "Mount Everest",
   },
 ]
 
@@ -40,8 +40,15 @@ const Hero = () => {
       <Swiper
         effect="coverflow"
         className="w-full h-screen"
-        slidesPerView={2}
-        spaceBetween={0}
+        breakpoints={{
+          320:{
+            slidesPerView:1,
+          },
+          768:{
+            slidesPerView:2,
+          }
+        }
+        }
         keyboard={{
           enabled: true,
         }}
@@ -65,15 +72,14 @@ const Hero = () => {
               alt={`${item.titulo} image`}
               className="object-cover"
               fill
-              sizes="(max-width: 768px) 100vw,
+              sizes="(max-width: 768px) 50vw,
               (max-width: 1200px) 50vw,
-              33vw"
+              "
               priority
             />
-            <div className="absolute md:container md:mx-auto bg-inherit">
-              <h1 className=" md:text-center text-8xl font-bold font-sans px-32 py-32 text-white">
-                {item.descricao}
-              </h1>
+            <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2  sm:w-2/5 lg:w-11/12 xl:w-11/12 2xl:w-3/5 h-auto w-fit bg-inherit bg-opacity-50 rounded-lg text-center">
+              <h1 className="text-8xl text-white font-bold">{item.descricao}</h1>
+              
             </div>
           </SwiperSlide>
         ))}
@@ -83,3 +89,9 @@ const Hero = () => {
 }
 
 export default Hero
+//<h1 className=" md:text-center text-8xl font-bold font-sans px-32 py-32   text-white">
+  //              {item.descricao}
+    //          </h1>
+//"absolute md:container md:mx-auto bg-white"
+//"absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 sm:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/2 h-auto bg-white bg-opacity-50 rounded-lg shadow-md text-center"
+//h1  md:text-center text-8xl font-bold font-sans px-32 py-32   text-white
