@@ -4,24 +4,6 @@ import { useEffect } from 'react';
 
 type CardProps = StatsType
 
-function Card() {
-    useEffect(() => {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('text-color-white');
-          }
-        });
-      });
-  
-      const counter = document.querySelector('.CardJuia h1');
-      observer.observe(counter);
-  
-      return () => {
-        observer.unobserve(counter);
-      };
-    }, []);
-
 
 const CardJuia = ({ counter, text}: CardProps) => {
     return(
