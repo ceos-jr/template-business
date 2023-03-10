@@ -9,6 +9,9 @@ import Contact1 from "@/components/Contact/Contact1"
 import Footer7 from "@/components/Footers/Footer7"
 import Services3 from "@/components/Services/Services3"
 import Navbar2 from "@/components/Nav-Header/NavBar2"
+import { useEffect } from "react"
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,6 +19,9 @@ const inter = Inter({
 })
 
 const Home: NextPage = () => {
+  useEffect(() =>{
+    Aos.init( {duration: 1500});
+  }, [])
   return (
     <div className={`${inter.variable} flex flex-col items-center font-inter`}>
       <Head>
