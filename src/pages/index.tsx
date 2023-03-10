@@ -21,7 +21,6 @@ import Footer1 from "@/components/Footers/Footer1"
 import Footer2 from "@/components/Footers/Footer2"
 import Footer4 from "@/components/Footers/Footer4"
 
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -37,14 +36,14 @@ const Home: NextPage = () => {
       </Head>
       <main className="w-full min-h-screen">
         <Navbar4 />
-        <Hero5/>
+        <Hero5 />
         <Services4 />
         <StatisticsSection />
         <Clients1 />
         <Member1 />
         <Contact1 />
       </main>
-      <Footer4/>
+      <Footer4 />
     </div>
   )
 }

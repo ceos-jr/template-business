@@ -44,7 +44,7 @@ const Hero2 = () => {
           //@ts-ignore
           "--swiper-theme-color": "#5B21B6",
         }}
-        classname = "w-full full"
+        classname="w-full full"
         className="w-full h-screen bg-zinc-800"
         spaceBetween={30}
         centeredSlides={true}
@@ -71,4 +71,3 @@ const Hero2 = () => {
   )
 }
 export default Hero2
-
