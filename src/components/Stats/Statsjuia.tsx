@@ -1,7 +1,7 @@
 import CardJuia from "./StatsCardJuia"
 import Image from "next/image"
-import { useInView } from 'react-intersection-observer';
-import React from 'react'
+import { useEffect, useState, useRef } from "react"
+import React from "react"
 
 export type StatsType = {
   counter: number
@@ -11,37 +11,30 @@ export type StatsType = {
 const stats: StatsType[] = [
   { counter: 999, text: "Services requested" },
   { counter: 999, text: "Happy cats out there" },
-  { counter: 0, text: "Complaints (they don't talk)" },
+  { counter: 0, text: "Complaints*" },
 ]
 
-const Animation = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    rootMargin: '-100px 0px',
-  });
-}
-
 const StatsSectionJuia = () => {
+  const myRef = useRef<HTMLDivElement | null>(null)
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    const opts: IntersectionObserverInit = {
+      threshold: 0.5,
+    }
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0]
+      setIsVisible(entry.isIntersecting)
+    }, opts)
+    if (myRef.current) observer.observe(myRef.current)
+
+    return () => {
+      if (myRef.current) observer.unobserve(myRef.current)
+    }
+  }, [])
+
   return (
-    <React.Fragment>
-      <style jsx>{`
-        .animacao-horizontal {
-          @apply absolute left-0;
-          transform: translateX(-100%);
-          animation: mover-horizontal 2s ease-out forwards;
-        }
-
-        @keyframes mover-horizontal {
-          0% {
-            transform: translateX(-100%);
-          }
-          100% {
-            transform: translateX(0);
-          }
-        }
-      `}</style>
-
-    <section ref={ref} className="w-full relative bg-blue-200">
+    <section ref={myRef} className="w-full relative bg-blue-200">
       <div className="container grid grid-cols-1 gap-8 p-8 py-32 mx-auto md:grid-cols-4">
         <Image
           src="https://cdn-icons-png.flaticon.com/512/763/763755.png"
@@ -49,15 +42,21 @@ const StatsSectionJuia = () => {
           alt="gatito"
           width={100}
           height={100}
-          className="{`transition-opacity ${inView ? 'opacity-1' : 'opacity-0'}`}"
+          className={`transition-all ease-in-out duration-1000 ${
+            isVisible
+              ? "opacity-100 transform-none animate-bounce"
+              : "opacity-0 -translate-y-30"
+          }`}
         />
         {stats.map((statistic) => (
-            <CardJuia key={statistic.counter} {...statistic} />
-          ))}
+          <CardJuia key={statistic.counter} {...statistic} />
+        ))}
+
+        <span className="absolute bottom-0 left-0 p-5 text-sm italic text-gray-600 ">
+          * They can't talk
+        </span>
       </div>
-      
     </section>
-    </React.Fragment>
   )
 }
 
