@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { GiBookStorm } from "react-icons/gi"
 import { GiHamburgerMenu } from "react-icons/gi"
 
-const Navbar = () => {
+const Navbar3 = () => {
   let Links = [
     { name: "HOME", link: "/" },
     { name: "SERVICES", link: "/" },
@@ -87,4 +87,4 @@ const Navbar = () => {
     </div>
   )
 }
-export default Navbar
+export default Navbar3

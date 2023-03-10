@@ -38,7 +38,7 @@ const NavItemMobile = ({ text, url }: NavItemProps) => {
   )
 }
 
-const NavBar = () => {
+const Navbar4 = () => {
   const [open, setOpen] = useState(false)
   const [show, setShow] = useState(true)
   const heightRef = useRef(0)
@@ -131,4 +131,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Navbar4

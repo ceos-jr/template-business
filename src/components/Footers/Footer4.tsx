@@ -10,7 +10,7 @@ const socialMedia = {
   facebook: "https://pt-br.facebook.com/",
 }
 
-export default function FooterLucas() {
+export default function Footer4() {
   return (
     <footer className="p-2 w-full bg-gray-900 divide-y md:py-8">
       <div className="flex flex-col gap-5 justify-evenly py-10 md:flex-row md:py-5">
