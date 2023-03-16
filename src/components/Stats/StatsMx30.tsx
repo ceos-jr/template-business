@@ -1,35 +1,42 @@
 import StatisticCardMx30 from "./StatsCardMx30"
 import { useEffect, useState, useRef } from "react"
-export type Statistic = {
-  number: number
-  name: string
-  description: string
-  delay: number
-  visible: boolean
-}
-export type StatisticsCardMx30Props = Statistic
+import { StatisticsCardMx30Props } from "./StatsCardMx30"
 const statistics: StatisticsCardMx30Props[] = [
-  { number: 945, name: "Jobs", description: "hey", delay: 312, visible: false },
   {
-    number: 949,
+    number: 945,
+    name: "Jobs",
+    description: "hey",
+    speed: 9,
+    visible: false,
+    className: "",
+    delay: "500ms",
+  },
+  {
+    number: 946,
     name: "Hours Saved",
     description: "alo",
-    delay: 414,
+    speed: 10,
     visible: false,
+    className: "",
+    delay: "750ms",
   },
   {
     number: 958,
     name: "Useful thing",
     description: "hi",
-    delay: 573,
+    speed: 11,
     visible: false,
+    className: "",
+    delay: "1000ms",
   },
   {
     number: 965,
     name: "Change",
     description: "hello",
-    delay: 762,
+    speed: 12,
     visible: false,
+    className: "",
+    delay: "1250ms",
   },
 ]
 
@@ -45,7 +52,12 @@ const StatisticsSectionMx30 = () => {
     }
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0]
-      setIsVisible(entry.isIntersecting)
+      if (entry.intersectionRatio > 0) {
+        setIsVisible(entry.isIntersecting)
+        if (myRef.current) observer.unobserve(myRef.current)
+      }
+      /* Acima so ta fazendo o seguinte: Se aparece um pouco da tela, o set is visible ta on. 
+    Dai, como ele ta on, ele foi observado, e dps de observar, ele trava e n observa mais.*/
     }, opts)
     // O que tava faltando era esse if aqui pra garantir que o negocio existe
     if (myRef.current) observer.observe(myRef.current)
@@ -86,14 +98,24 @@ const StatisticsSectionMx30 = () => {
           </p>
         </div>
         <div
-          className={`grid grid-cols-1 gap-10 text-white md:grid-cols-2 md:grid-rows-2 font-bold transition-all ease-in-out duration-1000 ${
-            isVisible
-              ? "opacity-100 transform-none"
-              : "opacity-0 translate-x-20"
-          }`}
+          className={`grid grid-cols-1 gap-10 text-white md:grid-cols-2 md:grid-rows-2 font-bold`}
         >
-          {statistics.map((statistic) => (
-            <StatisticCardMx30 key={statistic.name} {...statistic} />
+          {statistics.map((mx30, index) => (
+            <StatisticCardMx30
+              key={mx30.name}
+              number={mx30.number}
+              name={mx30.name}
+              description={mx30.description}
+              speed={mx30.speed}
+              visible={isVisible}
+              delay={mx30.delay}
+              className={`
+                ${
+                  isVisible
+                    ? "opacity-100 transform-none"
+                    : "opacity-0 translate-x-20"
+                }`}
+            />
           ))}
         </div>
       </div>
