@@ -67,7 +67,7 @@ const NavItem = ({ text, url }: NavItemProps) => {
   )
 }
 
-const Navbar = () => {
+const Navbar1 = () => {
   const [open, setOpen] = useState(false)
 
   const toggleNavbar = () => {
@@ -120,4 +120,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar1
