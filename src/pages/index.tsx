@@ -11,7 +11,6 @@ import Services3 from "@/components/Services/Services3"
 import Navbar3 from "@/components/Nav-Header/Navbar3"
 import StatisticsSectionMx30 from "@/components/Stats/StatsMx30"
 import Services5 from "@/components/Services/Services5"
-import Services4 from "@/components/Services/Sevices4"
 import Services2 from "@/components/Services/Services2"
 
 const inter = Inter({

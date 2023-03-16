@@ -4,13 +4,33 @@ export type Statistic = {
   number: number
   name: string
   description: string
+  delay: number
+  visible: boolean
 }
 export type StatisticsCardMx30Props = Statistic
 const statistics: StatisticsCardMx30Props[] = [
-  { number: 945, name: "Jobs", description: "hey" },
-  { number: 949, name: "Hours Saved", description: "alo" },
-  { number: 958, name: "Useful thing", description: "hi" },
-  { number: 965, name: "Change", description: "hello" },
+  { number: 945, name: "Jobs", description: "hey", delay: 312, visible: false },
+  {
+    number: 949,
+    name: "Hours Saved",
+    description: "alo",
+    delay: 414,
+    visible: false,
+  },
+  {
+    number: 958,
+    name: "Useful thing",
+    description: "hi",
+    delay: 573,
+    visible: false,
+  },
+  {
+    number: 965,
+    name: "Change",
+    description: "hello",
+    delay: 762,
+    visible: false,
+  },
 ]
 
 const StatisticsSectionMx30 = () => {
@@ -65,7 +85,13 @@ const StatisticsSectionMx30 = () => {
             vulputate sit amet lorem eget, gravida sagittis ex.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-10 text-white md:grid-cols-2 md:grid-rows-2">
+        <div
+          className={`grid grid-cols-1 gap-10 text-white md:grid-cols-2 md:grid-rows-2 font-bold transition-all ease-in-out duration-1000 ${
+            isVisible
+              ? "opacity-100 transform-none"
+              : "opacity-0 translate-x-20"
+          }`}
+        >
           {statistics.map((statistic) => (
             <StatisticCardMx30 key={statistic.name} {...statistic} />
           ))}
