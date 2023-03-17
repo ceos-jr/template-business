@@ -59,7 +59,7 @@ const Navbar2 = () => {
           </li>
           <li className="p-4">
             <Link
-              href="/seila"
+              href="AboutUs"
               className="underline decoration-blue-500 decoration-[0.25rem] motion-safe:transition-all motion-safe:duration-200 hover:decoration-[0.5rem] hover:decoration-blue-500/50 focus:decoration-[0.5rem] focus:decoration-blue-500/50"
             >
               About us
