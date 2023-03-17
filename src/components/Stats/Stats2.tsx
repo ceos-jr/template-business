@@ -1,6 +1,6 @@
-import StatisticCardMx30 from "./StatsCardMx30"
+import StatisticCardMx30 from "./StatsCard2"
 import { useEffect, useState, useRef } from "react"
-import { StatisticsCardMx30Props } from "./StatsCardMx30"
+import { StatisticsCardMx30Props } from "./StatsCard2"
 const statistics: StatisticsCardMx30Props[] = [
   {
     number: 945,
