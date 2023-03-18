@@ -22,8 +22,8 @@ const Slide = ({ name, image, text }: SlideProps) => {
         className="object-cover"
         fill
       />
-      <div className="absolute top-3/4 left-1/4 transform -translate-x-2/3 w-4/5 sm:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/3 h-auto bg-gradient-to-r from-purple-900 to-zinc-800 opacity-80 rounded-lg shadow-md text-center">
-        <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl py-4 drop-shadow-lg text-white">
+      <div className="absolute left-1/4 top-3/4 w-4/5 h-auto text-center bg-gradient-to-r from-purple-900 rounded-lg shadow-md opacity-80 transform -translate-x-2/3 sm:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/3 to-zinc-800">
+        <p className="py-4 text-lg text-white md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl drop-shadow-lg">
           {text}
         </p>
       </div>
@@ -73,11 +73,6 @@ const Hero2 = () => {
             className="flex overflow-hidden relative justify-center items-center w-full h-full text-lg text-center bg-zinc-800 aspect-video"
           >
             <Slide name={item.name} image={item.image} text={item.text} />
-            <div className="absolute top-3/4 left-1/4 transform -translate-x-2/3 w-4/5 sm:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/3 h-auto bg-gradient-to-r from-purple-900 to-zinc-800 opacity-80 rounded-lg shadow-md text-center">
-              <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl py-4 drop-shadow-lg text-white">
-                {item.text}
-              </p>
-            </div>
           </SwiperSlide>
         ))}
       </Swiper>
