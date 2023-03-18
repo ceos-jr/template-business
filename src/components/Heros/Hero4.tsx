@@ -1,4 +1,3 @@
-import React, { useRef, useState } from "react"
 import Image from "next/image"
 
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -64,20 +63,18 @@ const Hero = () => {
         {List.map((item) => (
           <SwiperSlide
             key={item.titulo}
-            className="text-center text-lg bg-transparent flex justify-center items-center w-full h-full relative overflow-hidden"
+            className="flex overflow-hidden relative justify-center items-center w-full h-full text-lg text-center bg-transparent"
           >
             <Image
               src={item.image}
               alt={`${item.titulo} image`}
               className="object-cover"
               fill
-              sizes="(max-width: 768px) 50vw,
-              (max-width: 1200px) 50vw,
-              "
+              sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
-            <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2  sm:w-2/5 lg:w-11/12 xl:w-11/12 2xl:w-3/5 h-auto w-fit bg-inherit bg-opacity-50 rounded-lg text-center">
-              <h1 className="text-8xl text-white font-bold">
+            <div className="absolute left-1/2 top-1/4 h-auto text-center bg-opacity-50 rounded-lg transform -translate-x-1/2 -translate-y-1/2 sm:w-2/5 lg:w-11/12 xl:w-11/12 2xl:w-3/5 w-fit bg-inherit">
+              <h1 className="text-8xl font-bold text-white">
                 {item.descricao}
               </h1>
             </div>
@@ -89,9 +86,3 @@ const Hero = () => {
 }
 
 export default Hero
-//<h1 className=" md:text-center text-8xl font-bold font-sans px-32 py-32   text-white">
-//              {item.descricao}
-//          </h1>
-//"absolute md:container md:mx-auto bg-white"
-//"absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 sm:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-1/2 h-auto bg-white bg-opacity-50 rounded-lg shadow-md text-center"
-//h1  md:text-center text-8xl font-bold font-sans px-32 py-32   text-white
