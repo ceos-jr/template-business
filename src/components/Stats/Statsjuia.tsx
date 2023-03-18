@@ -35,14 +35,13 @@ const StatsSectionJuia = () => {
 
   return (
     <section ref={myRef} className="w-full relative bg-blue-200">
-      <div className="container grid grid-cols-1 gap-8 p-8 py-32 mx-auto md:grid-cols-4">
+      <div className="container grid grid-cols-1 gap-8 p-8 py-32 mx-auto md:grid-cols-4 relative w-full h-full">
         <Image
           src="https://cdn-icons-png.flaticon.com/512/763/763755.png"
-          id="supergato"
           alt="gatito"
           width={100}
           height={100}
-          className={`transition-all ease-in-out duration-1000 ${
+          className={`transition-all ease-in-out duration-1000 justify-center ${
             isVisible
               ? "opacity-100 transform-none animate-bounce"
               : "opacity-0 -translate-y-30"
