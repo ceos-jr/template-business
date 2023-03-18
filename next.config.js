@@ -16,6 +16,16 @@ module.exports = {
       },
       {
         protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "github.com",
+        port: "",
+      },
+      {
+        protocol: "https",
         hostname: "cdn.dribbble.com",
       },
     ],
