@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="w-full min-h-screen">
         <Navbar2 />
-        <Hero4 />
+        <Hero3 />
         <Services3 />
         <StatisticsSection />
         <Clients1 />
