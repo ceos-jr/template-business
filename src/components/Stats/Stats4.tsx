@@ -74,7 +74,7 @@ const StatsSectionJuia = () => {
         ))}
 
         <span className="absolute bottom-0 left-0 p-5 text-sm italic text-gray-600 ">
-          * They can't talk
+          * They cannot talk
         </span>
       </div>
     </section>
