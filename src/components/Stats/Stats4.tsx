@@ -14,9 +14,33 @@ export type StatsType = {
 }
 
 const stats: StatsType[] = [
-  { nome: "services", counter: 999, text: "Services requested", speed: 10, visible: false, className: "", delay: "500ms" },
-  { nome: "cats",counter: 999, text: "Happy cats out there", speed: 10, visible: false, className: "", delay: "500ms" },
-  { nome: "complaint", counter: 0, text: "Complaints*", speed: 10, visible: false, className: "", delay: "500ms" },
+  {
+    nome: "services",
+    counter: 999,
+    text: "Services requested",
+    speed: 10,
+    visible: false,
+    className: "",
+    delay: "500ms",
+  },
+  {
+    nome: "cats",
+    counter: 999,
+    text: "Happy cats out there",
+    speed: 10,
+    visible: false,
+    className: "",
+    delay: "500ms",
+  },
+  {
+    nome: "complaint",
+    counter: 0,
+    text: "Complaints*",
+    speed: 10,
+    visible: false,
+    className: "",
+    delay: "500ms",
+  },
 ]
 
 const StatsSectionJuia = () => {
@@ -56,15 +80,15 @@ const StatsSectionJuia = () => {
           }`}
         />
         {stats.map((juia, index) => (
-          <CardJuia 
-          key={juia.nome}
-          counter={juia.counter}
-          text={juia.text}
-          nome={juia.nome}
-          speed={juia.speed}
-          visible={isVisible}
-          delay={juia.delay}
-          className={`
+          <CardJuia
+            key={juia.nome}
+            counter={juia.counter}
+            text={juia.text}
+            nome={juia.nome}
+            speed={juia.speed}
+            visible={isVisible}
+            delay={juia.delay}
+            className={`
           ${
             isVisible
               ? "opacity-100 transform-none"

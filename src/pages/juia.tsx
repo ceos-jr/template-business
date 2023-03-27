@@ -11,9 +11,9 @@ import Navbar3 from "@/components/Nav-Header/Navbar3"
 import StatisticsSection from "@/components/Stats/Stats4"
 
 const inter = Inter({
-    subsets: ["latin"],
-    variable: "--font-inter",
-  })
+  subsets: ["latin"],
+  variable: "--font-inter",
+})
 
 const Home: NextPage = () => {
   return (
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <Navbar3 />
         <Hero3 />
         <Services3 />
-        <StatisticsSection/>
+        <StatisticsSection />
         <Clients1 />
         <Member1 />
         <Contact1 />
