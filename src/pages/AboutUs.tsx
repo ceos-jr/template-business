@@ -18,7 +18,9 @@ const AboutUs = () => {
         />
       </div>
       <div>
-        <h1 className="font-bold pb-4 pl-8 text-4xl text-fuchsia-400">Quem Somos</h1>
+        <h1 className="font-bold pb-4 pl-8 text-4xl text-fuchsia-400">
+          Quem Somos
+        </h1>
         <p className="pl-8 leading-8 pb-12 px-4 py-8">
           Fundada em 1997, a Ceos é a Empresa Júnior do curso de Ciência da
           Computação da Universidade Federal do Ceará - UFC. Sempre focados na
@@ -33,7 +35,9 @@ const AboutUs = () => {
         </p>
       </div>
       <div>
-        <p className="font-semibold pb-2 pl-8 text-xl text-sky-600">Nossos Valores</p>
+        <p className="font-semibold pb-2 pl-8 text-xl text-sky-600">
+          Nossos Valores
+        </p>
         <p className="font-bold pb-4 pl-8 text-3xl px-8 text-fuchsia-400">
           Por que confiar na *insira o nome da empresa*
         </p>
