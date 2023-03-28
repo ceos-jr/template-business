@@ -32,6 +32,7 @@ const List: SlideProps[] = [
 
 const Hero3 = () => {
   return (
+    
     <section>
       <Swiper
         style={{
