@@ -8,21 +8,22 @@ import { EffectCards } from "swiper";
  
 const ClientsJuia = () => {
     return(
-        <section className = "w-full h-full absolute">
+        <section className="bg-white w-full h-screen mx-auto">
         <Swiper
-        style={{
-          //@ts-ignore
-          "--swiper-theme-color": "#ffffff",
-        }}
         effect={"cards"}
         grabCursor={true}
+        centeredSlides={true}
         modules={[EffectCards]}
-        className = "flex justify-center items-center"
+        slidesPerView={'auto'}
+
       >
-        <SwiperSlide className = "flex items-center justify-center text-xl font-bold text-white relative">Slide 1</SwiperSlide>
-        <SwiperSlide className = "flex items-center justify-center text-xl font-bold text-white relative">Slide 2</SwiperSlide>
-        <SwiperSlide className = "flex items-center justify-center text-xl font-bold text-white relative">Slide 3</SwiperSlide>
-        <SwiperSlide className = "flex items-center justify-center text-xl font-bold text-white relative">Slide 4</SwiperSlide>
+        <SwiperSlide >
+          <div className= " bg-red-500 block max-w-sm rounded-lg p-10 m-20 ">
+          <h1>a</h1>
+          </div>
+          </SwiperSlide>
+        <SwiperSlide className = "bg-blue-500 block max-w-sm rounded-lg p-10 m-20 ">b</SwiperSlide>
+        <SwiperSlide className = "bg-green-500 block max-w-sm rounded-lg p-10 m-20 ">c</SwiperSlide>
       </Swiper>
       </section>
     )
