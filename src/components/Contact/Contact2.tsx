@@ -37,14 +37,25 @@ function Input(props) {
     error={false}
   />);
 
-  switch (props.type) {
+  switch (props.name) {
     case "email":
-      if (props.value.search("@") && props.value.search(".")) {
+      if (
+        (props.value.indexOf("@") != -1 && props.value.indexOf(".") != -1)
+        || props.value.length < 5) {
         return okInput;
       } else {
         return erroInput;
       }
       break;
+    
+    case "number":
+      console.log(Number(props.value)); // melhorar 
+
+      if(isNaN(Number(props.value)) != true) {
+        return okInput;
+      } else {
+        return erroInput;
+      }
   
     default:
       return okInput;
@@ -63,12 +74,12 @@ const Contact2 = () => {
   const [desc, setDesc] = useState("");
 
   return (
-    <section className="container flex bg-blue-300 py-4 rounded-lg justify-center m-5">
-      <div className="flex justify-around content-center bg-slate-700 w-3/4 py-5 min-h-50">
+    <section className="flex bg-blue-200 py-4 w-full my-5 justify-center">
+      <div className="flex justify-between content-center rounded-lg bg-slate-700 w-3/4 py-5 min-h-50 shadow-lg">
         <form className="grid justify-items-center w-5/12">
           <Input name="name" type="text" value={name} setValue={setName} />
           <Input name="email" type="email" value={email} setValue={setEmail} />
-          <Input name="number" type="number" value={number} setValue={setNumber} />
+          <Input name="number" type="text" value={number} setValue={setNumber} />
           <label className="grid grid-columns-1 justify-items-center w-3/4 my-3">
             <span className=" text-white w-3/4">description</span>
             <textarea
@@ -79,10 +90,13 @@ const Contact2 = () => {
               onChange={(e) => setDesc(e.target.value)}
             ></textarea>
           </label>
-          <button type="submit">Submit</button>
+          <button type="submit" 
+            className="bg-green-500 p-2 px-3 rounded-sm text-white
+            hover:bg-white hover:text-green-500 ease-in duration-100"
+          >Submit</button>
         </form>
-        <div className="grid justify-items-center content-center w-5/12 min-h-70">
-          <p>
+        <div className="grid justify-items-center content-center p-10 min-h-70 w-7/12 fon">
+          <p className= "text-lg text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             elementum, metus vel fermentum mattis, est ex placerat erat, et
             mattis nunc nisl nec libero. Morbi eget bibendum urna. Proin
