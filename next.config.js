@@ -16,7 +16,21 @@ module.exports = {
       },
       {
         protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "github.com",
+        port: "",
+      },
+      {
+        protocol: "https",
         hostname: "cdn.dribbble.com",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn-icons-png.flaticon.com",
       },
     ],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 350],
