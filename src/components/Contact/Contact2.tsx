@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 function InputValidate(props) {
-  const errorStyle = props.error ? "border-rose-500" : "";
+  // const errorStyle = props.error ? "border-rose-500" : "";
 
   return (
     <label className="grid grid-columns-1 justify-items-center w-3/4 my-3">
@@ -10,67 +10,86 @@ function InputValidate(props) {
         type={props.type}
         name={props.name}
         value={props.value}
-        onChange={(e) => props.setValue(e.target.value)}
-        className={
-          props.error ? 
-            "w-3/4 h-6 text-sky-1000 bg-blue-100 p-0.5 rounded-sm active: outline-none border-2 border-rose-500" : 
-            "w-3/4 h-6 text-sky-1000 bg-blue-100 p-0.5 rounded-sm active: outline-none"
-        }
+        onChange={props.onChange}
+        className={"w-3/4 h-6 text-sky-1000 bg-blue-100 p-0.5 rounded-sm active: outline-none"}
+        style={props.erroStyle}
       ></input>
     </label>
   )
 }
 
 function Input(props) {
-  const erroInput = (<InputValidate 
-    type={props.type} 
-    name={props.name}
-    value={props.value}
-    setValue={props.setValue}
-    error={true}
-  />);
-  const okInput = (<InputValidate 
-    type={props.type} 
-    name={props.name}
-    value={props.value}
-    setValue={props.setValue}
-    error={false}
-  />);
+  const [erroStyle, setErroStyle] = useState({});
 
-  switch (props.name) {
-    case "email":
-      if (
-        (props.value.indexOf("@") != -1 && props.value.indexOf(".") != -1)
-        || props.value.length < 5) {
-        return okInput;
+
+  function onChange(event) {
+    const value = event.target.value;
+
+    const error = () => { 
+      const emailValidateRegex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+      const numberValidateRegex = new RegExp(/^[0-9()-\s]+$/);
+
+      // console.log(emailValidateRegex.test(value));
+
+      if (props.name === "email") {
+        if (
+          value.length < 4 ||
+          ( 
+            emailValidateRegex.test(value) === true &&
+            value.length < 35
+          ) 
+        ) {
+          return false;
+        } else {
+          return true;
+        }
+      } else if (props.name === "number") {
+        if (
+          value.length < 1 ||
+          ( 
+            numberValidateRegex.test(value) === true &&
+            value.length < 20
+          ) 
+        ) {
+          return false;
+        } else {
+          console.log(value);
+          return true;
+        }
       } else {
-        return erroInput;
+        return false;
       }
-      break;
+    };
     
-    case "number":
-      console.log(Number(props.value)); // melhorar 
+    if(error() === true) {
+      // console.log(value, props.name);
+      setErroStyle({
+        border: "solid red"  
+      })
+    } else {
+      setErroStyle({
+        border: "none"
+      })
+    }
 
-      if(isNaN(Number(props.value)) != true) {
-        return okInput;
-      } else {
-        return erroInput;
-      }
-  
-    default:
-      return okInput;
-      break;
+    props.setValue(value);
   }
-}
 
-function handleOnChange(e, setter) {
-  setter(e.target.value)
+  return (<InputValidate 
+    type={props.type} 
+    name={props.name}
+    value={props.value}
+    setValue={props.setValue}
+    erroStyle={erroStyle}
+    onChange={onChange}
+  />)
+
 }
 
 const Contact2 = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [number, setNumber] = useState(0);
+  const [number, setNumber] = useState("");
   const [desc, setDesc] = useState("");
 
   return (
