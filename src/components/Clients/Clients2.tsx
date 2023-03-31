@@ -95,7 +95,7 @@ export default function App() {
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className="w-1/3"
+          className="w-screen lg:w-1/3"
         >
           {clients.map((mx30) => (
             <SwiperSlide key={mx30.name}>

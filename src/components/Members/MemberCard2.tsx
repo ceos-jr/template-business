@@ -5,7 +5,7 @@ import Image from "next/image"
 type Members2Props = Members2Type
 const MemberCard2 = ({ image, name, role, description }: Members2Props) => {
   return (
-    <div className="p-10 text-center jusitfy-center items-center flex flex-col bg-zinc-800 rounded-lg shadow-lg">
+    <div className="p-10 px-10 text-center jusitfy-center items-center flex flex-col bg-zinc-800 rounded-lg shadow-lg">
       <div className="overflow-hidden relative w-40 h-40 rounded-full">
         {image ? (
           <Image
