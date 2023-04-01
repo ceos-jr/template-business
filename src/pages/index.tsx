@@ -1,14 +1,13 @@
 import type { NextPage } from "next"
 import { Inter } from "@next/font/google"
 import Head from "next/head"
-import Hero3 from "@/components/Heros/Hero3"
+import Hero2 from "@/components/Heros/Hero2"
 import StatisticsSection from "@/components/Stats/Stats4"
-import Member1 from "@/components/Members/Members1"
+import Member2 from "@/components/Members/Members2"
 import Clients1 from "@/components/Clients/Clients1"
 import Contact1 from "@/components/Contact/Contact1"
 import Footer7 from "@/components/Footers/Footer7"
 import Services3 from "@/components/Services/Services3"
-import Navbar3 from "@/components/Nav-Header/Navbar3"
 import Navbar2 from "@/components/Nav-Header/NavBar2"
 
 const inter = Inter({
@@ -26,11 +25,11 @@ const Home: NextPage = () => {
       </Head>
       <main className="w-full min-h-screen">
         <Navbar2 />
-        <Hero3 />
+        <Hero2 />
         <Services3 />
         <StatisticsSection />
         <Clients1 />
-        <Member1 />
+        <Member2 />
         <Contact1 />
       </main>
       <Footer7 />
