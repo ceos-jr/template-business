@@ -1,16 +1,16 @@
-import React, { CSSProperties } from "react";
-import MemberCard2 from "./MemberCard2";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
-import ConorImg from "@/images/members/conor.webp";
+import React, { CSSProperties } from "react"
+import MemberCard2 from "./MemberCard2"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Pagination } from "swiper"
+import "swiper/css"
+import "swiper/css/pagination"
+import ConorImg from "@/images/members/conor.webp"
 
 const slideStyle: CSSProperties = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-};
+}
 
 const memberInfo = [
   {
@@ -18,30 +18,30 @@ const memberInfo = [
     role: "Personal Trainer",
     memberImg: ConorImg,
     memberImgAlt: "Jonathan Galingo picture",
-    linkedinURL: "#"
+    linkedinURL: "#",
   },
   {
     name: "Jonathan Galingo",
     role: "Personal Trainer",
     memberImg: ConorImg,
     memberImgAlt: "Jonathan Galingo picture",
-    linkedinURL: "#"
+    linkedinURL: "#",
   },
   {
     name: "Jonathan Galingo",
     role: "Personal Trainer",
     memberImg: ConorImg,
     memberImgAlt: "Jonathan Galingo picture",
-    linkedinURL: "#"
+    linkedinURL: "#",
   },
   {
     name: "Jonathan Galingo",
     role: "Personal Trainer",
     memberImg: ConorImg,
     memberImgAlt: "Jonathan Galingo picture",
-    linkedinURL: "#"
+    linkedinURL: "#",
   },
-];
+]
 
 const Members2 = () => {
   return (
@@ -58,7 +58,7 @@ const Members2 = () => {
           className="w-full h-[30rem]"
           style={{
             // @ts-ignore
-            "--swiper-theme-color": "#84cc16",   
+            "--swiper-theme-color": "#84cc16",
           }}
           slidesPerView={1}
           pagination={{
@@ -77,28 +77,23 @@ const Members2 = () => {
           }}
           modules={[Pagination]}
         >
-          {
-            memberInfo.map((member, index) => {
-              return (
-                <SwiperSlide 
-                  key={`slider-${index}`}
-                  style={slideStyle}
-                >
-                  <MemberCard2 
-                    name={member.name}
-                    role={member.role} 
-                    memberImg={member.memberImg}
-                    memberImgAlt={member.memberImgAlt}
-                    linkedinURL={member.linkedinURL}
-                  />
-                </SwiperSlide>
-              ) 
-            })
-          }
+          {memberInfo.map((member, index) => {
+            return (
+              <SwiperSlide key={`slider-${index}`} style={slideStyle}>
+                <MemberCard2
+                  name={member.name}
+                  role={member.role}
+                  memberImg={member.memberImg}
+                  memberImgAlt={member.memberImgAlt}
+                  linkedinURL={member.linkedinURL}
+                />
+              </SwiperSlide>
+            )
+          })}
         </Swiper>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Members2;
+export default Members2

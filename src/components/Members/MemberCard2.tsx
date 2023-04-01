@@ -44,5 +44,3 @@ const MemberCard2 = ({
 }
 
 export default MemberCard2
-
-
