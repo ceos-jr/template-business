@@ -13,8 +13,6 @@ import Contact2 from "@/components/Contact/Contact2"
 import Navbar4 from "@/components/Nav-Header/NavBar4"
 import FooterLucas from "@/components/Footers/Footer4"
 
-
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -29,14 +27,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full min-h-screen">
-        <Navbar4/>
+        <Navbar4 />
         <Hero2 />
         <Services3 />
         <StatisticsSection />
         <Clients1 />
         <Member2 />
         <Contact2 />
-        </main>
+      </main>
       <FooterLucas />
     </div>
   )
