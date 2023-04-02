@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <Navbar2 />
         <Hero3 />
         <Services3 />
-        <StatisticsSection/>
+        <StatisticsSection />
         <ClientsJuia />
         <Member1 />
         <Contact1 />

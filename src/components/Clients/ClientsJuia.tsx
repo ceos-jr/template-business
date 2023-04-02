@@ -18,17 +18,20 @@ const List: SlideProps[] = [
   {
     titulo: "meow",
     img: "https://cdn-icons-png.flaticon.com/512/763/763771.png",
-    texto: "... Meow, meow (Thanks to Meow's Company, now I have a boat with a roof!",
+    texto:
+      "... Meow, meow (Thanks to Meow's Company, now I have a boat with a roof!",
   },
   {
     titulo: "meow2",
     img: "https://cdn-icons-png.flaticon.com/512/763/763773.png",
-    texto: "Meoooow! (I had to hunt for my own food every day, but now that I have a boat, I can eat sashimi anytime.)",
+    texto:
+      "Meoooow! (I had to hunt for my own food every day, but now that I have a boat, I can eat sashimi anytime.)",
   },
   {
     titulo: "meow3",
     img: "https://cdn-icons-png.flaticon.com/512/8036/8036693.png",
-    texto: "Meow meow.. meow meow (Years ago, I had a dream of traveling the world, but people only cared about dogs. Meow's Company has created an accessible and reliable environment for cats, and now I have my own boat!)",
+    texto:
+      "Meow meow.. meow meow (Years ago, I had a dream of traveling the world, but people only cared about dogs. Meow's Company has created an accessible and reliable environment for cats, and now I have my own boat!)",
   },
 ]
 
@@ -52,20 +55,17 @@ const ClientsJuia = () => {
         }}
       >
         {List.map((item) => (
-          <SwiperSlide
-            key={item.titulo}
-            className="bg-pink-200 h-80 w-50"
-          >
-            <div className = "grid grid-cols-2">
-            <Image
-              src={item.img}
-              alt={`${item.titulo} image`}
-              className="m-10"
-              width={300}
-              height={250}
-              priority
-            />
-            <div className="m-6 w-1/2 text-xl py-6">{item.texto}</div>
+          <SwiperSlide key={item.titulo} className="bg-pink-200 h-80 w-50">
+            <div className="grid grid-cols-2">
+              <Image
+                src={item.img}
+                alt={`${item.titulo} image`}
+                className="m-10"
+                width={300}
+                height={250}
+                priority
+              />
+              <div className="m-6 w-1/2 text-xl py-6">{item.texto}</div>
             </div>
           </SwiperSlide>
         ))}
