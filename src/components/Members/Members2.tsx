@@ -64,7 +64,7 @@ export default function App() {
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className="w-screen lg:w-1/3"
+          className="w-full lg:w-1/3"
         >
           {members.map((mx30) => (
             <SwiperSlide key={mx30.name}>
