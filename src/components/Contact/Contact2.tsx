@@ -25,14 +25,16 @@ function handleValidate(value, setErroStyle, name) {
     const numberValidateRegex = new RegExp(/^[0-9()-\s]+$/);
 
     // console.log(emailValidateRegex.test(value));
-
-    if (name === "email") {
+    if (name === "name") {
+      if (value.length < 4) {
+        return true;
+      } else {
+        return false;
+      }
+    } else if (name === "email") {
       if (
-        value.length < 4 ||
-        ( 
-          emailValidateRegex.test(value) === true &&
-          value.length < 35
-        ) 
+        emailValidateRegex.test(value) === true &&
+        value.length < 35
       ) {
         return false;
       } else {
@@ -40,20 +42,21 @@ function handleValidate(value, setErroStyle, name) {
       }
     } else if (name === "number") {
       if (
-        value.length < 1 ||
-        ( 
-          numberValidateRegex.test(value) === true &&
-          value.length < 20
-        ) 
+        numberValidateRegex.test(value) === true &&
+        value.length < 16
       ) {
         return false;
       } else {
         console.log(value);
         return true;
       }
-    } else {
-      return false;
-    }
+    } else if (name === "desc") {
+      if(value.length < 1) {
+        return true;
+      } else {
+        return false;
+      }
+    } 
   };
   
   if(error() === true) {
@@ -62,15 +65,9 @@ function handleValidate(value, setErroStyle, name) {
       border: "solid red"  
     })
   } else {
-    if(value.length > 4) {
-      setErroStyle({
-        border: "solid green"
-      })
-    } else {
-      setErroStyle({
-        border: "none"
-      })
-    }
+    setErroStyle({
+      border: "solid green"
+    })
   }
 }
 
