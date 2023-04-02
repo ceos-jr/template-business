@@ -10,6 +10,8 @@ import Footer7 from "@/components/Footers/Footer7"
 import Services3 from "@/components/Services/Services3"
 import Navbar2 from "@/components/Nav-Header/NavBar2"
 import Contact2 from "@/components/Contact/Contact2"
+import Navbar4 from "@/components/Nav-Header/NavBar4"
+import FooterLucas from "@/components/Footers/Footer4"
 
 
 
@@ -27,7 +29,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full min-h-screen">
-        <Navbar2 />
+        <Navbar4/>
         <Hero2 />
         <Services3 />
         <StatisticsSection />
@@ -35,7 +37,7 @@ const Home: NextPage = () => {
         <Member2 />
         <Contact2 />
         </main>
-      <Footer7 />
+      <FooterLucas />
     </div>
   )
 }
