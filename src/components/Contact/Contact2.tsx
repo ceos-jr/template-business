@@ -80,14 +80,13 @@ function Input(props) {
 
     handleValidate(value, setErroStyle, props.name);
 
-    props.setValue(value);
+    props.setvalue(value);
   }
 
   return (<InputValidate 
     type={props.type} 
     name={props.name}
     value={props.value}
-    setValue={props.setValue}
     erroStyle={erroStyle}
     onChange={onChange}
   />)
@@ -106,9 +105,9 @@ const Contact2 = () => {
     <section className="flex bg-blue-200 py-5 w-full my-5 justify-center">
       <div className="flex justify-between content-center rounded-lg bg-white w-7/12 py-5 min-h-50 shadow-lg">
         <form className="grid justify-items-center w-5/12">
-          <Input name="name" type="text" value={name} setValue={setName} />
-          <Input name="email" type="email" value={email} setValue={setEmail} />
-          <Input name="number" type="text" value={number} setValue={setNumber} />
+          <Input name="name" type="text" value={name} setvalue={setName} />
+          <Input name="email" type="email" value={email} setvalue={setEmail} />
+          <Input name="number" type="text" value={number} setvalue={setNumber} />
           <label className="grid grid-columns-1 justify-items-center w-3/4 my-3">
             <span className=" text-slate-700 w-3/4">description</span>
             <textarea
@@ -116,7 +115,6 @@ const Contact2 = () => {
               className="w-3/4 text-slate-700 bg-blue-100 p-0.5 rounded-sm resize-none active: outline-none"
               rows={5}
               maxLength={256}
-              setValue={setDesc}
               style={descErroStyle}
               onChange={(e) => {
                 const value = event.target.value;
