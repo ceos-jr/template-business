@@ -3,7 +3,9 @@ import Image from 'next/image';
 function MemberBox(props) {
     
     return (
-        <div className="grid items-center content-center justify-items-center gap-6 w-60 h-60 p-4 m-4 bg-slate-200 shadow-md rounded-sm">
+        <div className="grid items-center content-center justify-items-center gap-6 w-60 h-60 p-4 m-4 
+        hover:w-64 hover:h-64 ease-in duration-100 
+        bg-slate-200 shadow-md rounded-sm">
             <div className="relative rounded-full bg-slate-400 w-20 h-20 md:h-15 overflow-hidden">
                 <Image
                 src="/images/members/avatar.png"

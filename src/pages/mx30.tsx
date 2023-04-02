@@ -2,17 +2,18 @@ import type { NextPage } from "next"
 import { Inter } from "@next/font/google"
 import Head from "next/head"
 import Hero2 from "@/components/Heros/Hero2"
-import Members1 from "@/components/Members/Members1"
-import Members4 from "@/components/Members/Members4"
-import MemberCard1 from "@/components/Members/MemberCard1"
-import StatisticsSection from "@/components/Stats/Stats4"
-import Member2 from "@/components/Members/Members2"
+import StatisticsSection from "@/components/Stats/Stats1"
+import Member3 from "@/components/Members/Members3"
 import Clients1 from "@/components/Clients/Clients1"
 import Contact1 from "@/components/Contact/Contact1"
 import Footer7 from "@/components/Footers/Footer7"
 import Services3 from "@/components/Services/Services3"
-import Navbar2 from "@/components/Nav-Header/NavBar2"
-import Contact2 from "../components/Contact/Contact2"
+import Navbar3 from "@/components/Nav-Header/Navbar3"
+import StatisticsSectionMx30 from "@/components/Stats/Stats2"
+import Services5 from "@/components/Services/Services5"
+import Services2 from "@/components/Services/Services2"
+import Footer6 from "@/components/Footers/Footer6"
+import Clients2 from "@/components/Clients/Clients2"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,19 +29,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full min-h-screen">
-        <Navbar2 />
+        <Navbar3 />
         <Hero2 />
-        <Services3 />
-        <StatisticsSection />
-        <Clients1 />
-        <MemberCard1 />
-        <Members1 />
-        <Members4 />
-        <Member2 />
-        <Contact1 />
-        <Contact2 />
+        <Services2 />
+        <Member3 />
+        <StatisticsSectionMx30 />
+        <Clients2 />
       </main>
-      <Footer7 />
+      <Footer6 />
     </div>
   )
 }
