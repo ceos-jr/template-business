@@ -4,7 +4,9 @@ import Head from "next/head"
 import Hero4 from "@/components/Heros/Hero4"
 import Hero2 from "@/components/Heros/Hero2"
 import StatisticsSection from "@/components/Stats/Stats1"
-import Member1 from "@/components/Members/Members1"
+import Members1 from "@/components/Members/Members1"
+import Members2 from "@/components/Members/Members2"
+import MemberCard1 from "@/components/Members/MemberCard1"
 import Clients1 from "@/components/Clients/Clients1"
 import Contact1 from "@/components/Contact/Contact1"
 import Footer7 from "@/components/Footers/Footer7"
@@ -32,7 +34,9 @@ const Home: NextPage = () => {
         <Services3 />
         <StatisticsSection />
         <Clients1 />
-        <Member1 />
+        <MemberCard1 />
+        <Members1 />
+        <Members2 />
         <Contact1 />
         <Contact2 />
       </main>
