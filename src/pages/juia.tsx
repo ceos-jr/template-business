@@ -11,9 +11,9 @@ import Navbar2 from "@/components/Nav-Header/NavBar2"
 import StatisticsSection from "@/components/Stats/Stats4"
 
 const inter = Inter({
-    subsets: ["latin"],
-    variable: "--font-inter",
-  })
+  subsets: ["latin"],
+  variable: "--font-inter",
+})
 
 const Home: NextPage = () => {
   return (
