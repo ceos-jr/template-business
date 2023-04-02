@@ -23,12 +23,12 @@ const List: SlideProps[] = [
   {
     titulo: "meow2",
     img: "https://cdn-icons-png.flaticon.com/512/763/763773.png",
-    texto: "I had to hunt for my own food every day, but now that I have a boat, I can eat sashimi anytime.",
+    texto: "Meoooow! (I had to hunt for my own food every day, but now that I have a boat, I can eat sashimi anytime.)",
   },
   {
     titulo: "meow3",
     img: "https://cdn-icons-png.flaticon.com/512/8036/8036693.png",
-    texto: "Years ago, I had a dream of traveling the world, but people only cared about dogs. Meow's Company has created an accessible and reliable environment for cats, and now I have my own boat!",
+    texto: "Meow meow.. meow meow (Years ago, I had a dream of traveling the world, but people only cared about dogs. Meow's Company has created an accessible and reliable environment for cats, and now I have my own boat!)",
   },
 ]
 
