@@ -27,7 +27,7 @@ const members: Member1Type[] = [
     name: "Conor McGregor",
     position: "CEO",
     image: ConorImg,
-  }
+  },
 ]
 
 const Members1 = () => {
