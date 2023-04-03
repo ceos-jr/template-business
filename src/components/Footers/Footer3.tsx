@@ -17,7 +17,7 @@ const socialMedia = {
   facebook: "https://pt-br.facebook.com/",
 }
 
-const FooterVic = () => {
+const Footer3 = () => {
   return (
     <footer className="py-16 px-8 w-full md:py-8 bg-slate-200">
       <div className="container mx-auto">
@@ -146,4 +146,4 @@ const FooterVic = () => {
   )
 }
 
-export default FooterVic
+export default Footer3

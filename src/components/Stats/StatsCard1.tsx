@@ -21,7 +21,7 @@ const StatisticCard = ({ number, name, speed }: StatisticsCardProps) => {
     return () => {
       clearInterval(interval)
     }
-  }, [value])
+  }, [number, speed, value])
 
   return (
     <div className="flex flex-col gap-4 justify-center items-center p-8 font-bold rounded-lg backdrop-blur-md bg-white/10">

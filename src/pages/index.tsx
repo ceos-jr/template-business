@@ -1,12 +1,22 @@
 import type { NextPage } from "next"
 import { Inter } from "@next/font/google"
 import Head from "next/head"
+
+import Hero3 from "@/components/Heros/Hero3"
+import Member1 from "@/components/Members/Members1"
 import Hero2 from "@/components/Heros/Hero2"
-import StatisticsSection from "@/components/Stats/Stats4"
 import Member2 from "@/components/Members/Members2"
 import Clients1 from "@/components/Clients/Clients1"
 import Contact1 from "@/components/Contact/Contact1"
-import Footer7 from "@/components/Footers/Footer7"
+import {
+  Footer1,
+  Footer2,
+  Footer3,
+  Footer4,
+  Footer5,
+  Footer6,
+  Footer7,
+} from "@/components/Footers"
 import Services3 from "@/components/Services/Services3"
 import Navbar2 from "@/components/Nav-Header/NavBar2"
 import Contact2 from "@/components/Contact/Contact2"
@@ -32,7 +42,6 @@ const Home: NextPage = () => {
         <Navbar4/>
         <Hero2 />
         <Services3 />
-        <StatisticsSection />
         <Clients1 />
         <Member2 />
         <Contact2 />
