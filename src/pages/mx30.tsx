@@ -3,8 +3,6 @@ import { Inter } from "@next/font/google"
 import Head from "next/head"
 import Hero2 from "@/components/Heros/Hero2"
 import StatisticsSection from "@/components/Stats/Stats1"
-
-import Member2 from "@/components/Members/Members2"
 import Member3 from "@/components/Members/Members3"
 import Clients1 from "@/components/Clients/Clients1"
 import Contact1 from "@/components/Contact/Contact1"
@@ -35,14 +33,10 @@ const Home: NextPage = () => {
         <Navbar3 />
         <Hero2 />
         <Services2 />
-        <Member2 />
         <StatisticsSectionMx30 />
         <Clients2 />
-        <Contact2 />
         <Member3 />
-        <StatisticsSectionMx30 />
-        <Clients2 />
-        origin/main
+        <Contact1 />
       </main>
       <Footer6 />
     </div>
