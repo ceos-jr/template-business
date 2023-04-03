@@ -5,7 +5,7 @@ import Hero2 from "@/components/Heros/Hero2"
 import StatisticsSection from "@/components/Stats/Stats4"
 import Member2 from "@/components/Members/Members2"
 import Clients1 from "@/components/Clients/Clients1"
-import Contact1 from "@/components/Contact/Contact1"
+import ContactVic from "@/components/Contact/VicContact2"
 import Footer7 from "@/components/Footers/Footer7"
 import Services3 from "@/components/Services/Services3"
 import Navbar2 from "@/components/Nav-Header/NavBar2"
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <StatisticsSection />
         <Clients1 />
         <Member2 />
-        <Contact1 />
+        <ContactVic />
       </main>
       <Footer7 />
     </div>

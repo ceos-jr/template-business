@@ -1,3 +1,4 @@
+//Importando ícones da biblioteca react-icons (font awesome)
 import {
   FaCube,
   FaFacebookF,
@@ -5,9 +6,13 @@ import {
   FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa"
+
+//importando o arquivo que estiliza o hover
 import VicMediaLinkDark from "./VicMediaLinkDark"
 
 // To generate whatsapp link https://postcron.com/en/blog/landings/whatsapp-link-generator/
+
+//criando uma constante que atribui links a cada um dos nomes dos ícones, que posteriormente serão renderizados junto com o medialinkdark
 const socialMedia = {
   instagram: "https://www.instagram.com/ceosjr/",
   linkedin:
@@ -17,16 +22,21 @@ const socialMedia = {
   facebook: "https://pt-br.facebook.com/",
 }
 
+//criando a constante que faz o footer propriamente
 const FooterVic = () => {
   return (
     <footer className="py-16 px-8 w-full md:py-8 bg-slate-200">
+//mx-auto centraliza o container
       <div className="container mx-auto">
+        // criando colunas dentro do container com espaço 8 entre elas , add margem de baixo de 8,a partir de 768 px, 4 colunas sao criadas
         <div className="grid grid-cols-1 gap-8 mb-8 md:grid-cols-4 text-sky-900">
           <div>
             <h2 className="mb-4 text-2xl font-bold text-gray-400">Product</h2>
+            //alinha as colunas verticalmente conforme a resolução da tela. cria uma lista nao ordenada
             <ul className="flex flex-col gap-4">
               <li>
                 <a
+                //transition(propriedade) pra especificar que propriedade deve mudar
                   className="transition-colors cursor-pointer hover:text-rose-900"
                   href="#"
                 >
@@ -118,10 +128,12 @@ const FooterVic = () => {
           </div>
         </div>
         <div className="my-4 h-0.5 bg-gray-400 rounded-full"></div>
+        //justify-between dispôe os items do container igualmente distanciados
         <div className="flex gap-8 justify-between text-rose-900">
           <h3>Copyright © 2023 Financial Business</h3>
           <div className="flex gap-2 items-center text-3xl">
             {socialMedia.instagram && (
+              //auto explicativo
               <VicMediaLinkDark
                 link={socialMedia.instagram}
                 Icon={FaInstagram}
