@@ -6,12 +6,4 @@ import Footer5 from "@/components/Footers/Footer5"
 import Footer6 from "@/components/Footers/Footer6"
 import Footer7 from "@/components/Footers/Footer7"
 
-export {
-    Footer1,
-Footer2,
-Footer3,
-Footer4,
-Footer5,
-Footer6,
-Footer7,
-} 
+export { Footer1, Footer2, Footer3, Footer4, Footer5, Footer6, Footer7 }
