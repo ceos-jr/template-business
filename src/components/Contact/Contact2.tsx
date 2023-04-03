@@ -1,7 +1,15 @@
 import { useState } from "react"
 import Image from "next/image"
 
-function InputValidate(props) {
+function InputValidate(props: {
+  name: string,
+  type: string,
+  value: string,
+  onChange: (value: string) => void,
+  erroStyle: {
+    border: string
+  }
+}) {
   // const errorStyle = props.error ? "border-rose-500" : "";
 
   return (
@@ -19,7 +27,12 @@ function InputValidate(props) {
   )
 }
 
-function handleValidate(value, setErroStyle, name) {
+function handleValidate(
+    value: string, 
+    setErroStyle: ({
+      border: string,
+    }) => void, 
+    name) {
   const error = () => { 
     const emailValidateRegex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
     const numberValidateRegex = new RegExp(/^[0-9()-\s]+$/);
@@ -71,16 +84,21 @@ function handleValidate(value, setErroStyle, name) {
   }
 }
 
-function Input(props) {
+function Input(props: {
+  name: string,
+  type: string,
+  value: string,
+  setValue: (string) => void
+}) {
   const [erroStyle, setErroStyle] = useState({});
 
 
-  function onChange(event) {
+  function onChange(event: any) {
     const value = event.target.value;
 
     handleValidate(value, setErroStyle, props.name);
 
-    props.setvalue(value);
+    props.setValue(value);
   }
 
   return (<InputValidate 
@@ -105,9 +123,9 @@ const Contact2 = () => {
     <section className="flex bg-blue-200 py-5 w-full my-5 justify-center">
       <div className="flex justify-between content-center rounded-lg bg-white w-7/12 py-5 min-h-50 shadow-lg">
         <form className="grid justify-items-center w-5/12">
-          <Input name="name" type="text" value={name} setvalue={setName} />
-          <Input name="email" type="email" value={email} setvalue={setEmail} />
-          <Input name="number" type="text" value={number} setvalue={setNumber} />
+          <Input name="name" type="text" value={name} setValue={setName} />
+          <Input name="email" type="email" value={email} setValue={setEmail} />
+          <Input name="number" type="text" value={number} setValue={setNumber} />
           <label className="grid grid-columns-1 justify-items-center w-3/4 my-3">
             <span className=" text-slate-700 w-3/4">description</span>
             <textarea
@@ -116,7 +134,7 @@ const Contact2 = () => {
               rows={5}
               maxLength={256}
               style={descErroStyle}
-              onChange={(e) => {
+              onChange={(e: any) => {
                 const value = event.target.value;
 
                 handleValidate(value, setDescErroStyle, "desc");

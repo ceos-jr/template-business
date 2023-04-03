@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-function MemberBox(props) {
+function MemberBox(props: {data: MemberData}) {
     
     return (
         <div className="grid items-center content-center justify-items-center gap-6 w-60 h-60 p-4 m-4 
@@ -8,7 +8,7 @@ function MemberBox(props) {
         bg-slate-200 shadow-md rounded-sm">
             <div className="relative rounded-full bg-slate-400 w-20 h-20 md:h-15 overflow-hidden">
                 <Image
-                src="/images/members/avatar.png"
+                src={props.data.avatarUrl}
                 alt="contact image"
                 className="relative object-contain w-1"
                 fill
@@ -37,7 +37,7 @@ const Members2 = () => {
         membersList.push({
             name: 'Pedro Vinicius',
             role: 'Developer',
-            avatar_url: "../../../public/images/members/avatar.png",
+            avatarUrl: "/images/members/avatar.png",
             linkedin: "https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"
         });
     }
