@@ -1,6 +1,13 @@
+import { useState } from "react"
 import Image from "next/image"
 
 const Contact2 = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [number, setNumber] = useState("");
+    const [desc, setDesc] = useState("");
+
+    const [descErroStyle, setDescErroStyle] = useState({});
     return(
         <div className = "relative h-fit w-screen">
             <Image
@@ -16,8 +23,8 @@ const Contact2 = () => {
             <form className="flex flex-col items-center justify-center">
                 <input type="name" name="" id="" placeholder="Name" className="w-2/5 px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"/>
                 <input type="email" name="" id="" placeholder="example@gmail.com" className="w-2/5 px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"/>
-                <input type="phone" name="" id="" placeholder="xx 12345-6789" className="w-2/5 px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"/>
-                <textarea id="message" rows={6} className="block p-2.5 w-2/5 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" placeholder="Write your thoughts here..."></textarea>
+                <input type="phone" name="" id="" placeholder="xx 12345-6789" className="w-2/5 px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" value={number} />
+                <textarea id="message" rows={6} className="block p-2.5 w-2/5 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" placeholder="Write your thoughts here..." value={desc} ></textarea>
                 
             </form>
             <div className="flex py-8 align-middle justify-center items-center">
