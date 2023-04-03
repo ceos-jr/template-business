@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, ChangeEvent } from "react"
 import Image from "next/image"
 
 function InputValidate(props: {
@@ -89,7 +89,7 @@ function Input(props: {
 }) {
   const [erroStyle, setErroStyle] = useState({});
 
-  function onChange(event: React.FormEvent<HTMLInputElement>) {
+  function onChange(event: ChangeEvent<HTMLInputElement>) {
     const value = event.target.value;
 
     handleValidate(value, setErroStyle, props.name);
@@ -130,7 +130,7 @@ const Contact2 = () => {
               rows={5}
               maxLength={256}
               style={descErroStyle}
-              onChange={(e: React.FormEvent<HTMLInputElement>) => {
+              onChange={(event: ChangeEvent<HTMLTextAreaElement>) => {
                 const value = event.target.value;
 
                 handleValidate(value, setDescErroStyle, "desc");
