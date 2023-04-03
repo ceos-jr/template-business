@@ -2,7 +2,7 @@ export const Contact2 = () => {
   return (
     <section className="bg-zinc-900 container grid grid-cols-1 gap-8 place-items-center p-8 py-16 mx-auto md:grid-cols-3">
       <div className="flex flex-col gap-8 text-white">
-        <h2 className="text-lg font-semibold text-violet-700">Talk with us</h2>
+        <h2 className="text-lg font-semibold text-violet-700">Talk To Us</h2>
         <h1 className="text-3xl">
           Get a <span className="font-bold text-violet-700">Free</span> Project
           Evaluation Today!

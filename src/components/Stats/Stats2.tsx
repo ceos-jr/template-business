@@ -75,7 +75,7 @@ const StatisticsSectionMx30 = () => {
    * pra n deixar duro a gente coloca um transition-all duration-1000 e ease-in-out
    */
   return (
-    <section ref={myRef} className="w-full bg-zinc-900">
+    <section ref={myRef} className="overflow-x-hidden w-full bg-zinc-900">
       <div className="container grid grid-cols-1 gap-8 p-8 py-32 mx-auto md:grid-cols-2">
         <div className="flex flex-col gap-12 justify-center items-center text-gray-400">
           <p className="w-full font-light uppercase">Lorem Ipsum</p>
