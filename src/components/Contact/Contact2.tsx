@@ -5,10 +5,8 @@ function InputValidate(props: {
   name: string,
   type: string,
   value: string,
-  onChange: (value: string) => void,
-  erroStyle: {
-    border: string
-  }
+  onChange: any,
+  erroStyle: any
 }) {
   // const errorStyle = props.error ? "border-rose-500" : "";
 
@@ -29,10 +27,9 @@ function InputValidate(props: {
 
 function handleValidate(
     value: string, 
-    setErroStyle: ({
-      border: string,
-    }) => void, 
-    name) {
+    setErroStyle: any, 
+    name: string
+  ) {
   const error = () => { 
     const emailValidateRegex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
     const numberValidateRegex = new RegExp(/^[0-9()-\s]+$/);
@@ -88,12 +85,11 @@ function Input(props: {
   name: string,
   type: string,
   value: string,
-  setValue: (string) => void
+  setValue: any
 }) {
   const [erroStyle, setErroStyle] = useState({});
 
-
-  function onChange(event: any) {
+  function onChange(event: React.FormEvent<HTMLInputElement>) {
     const value = event.target.value;
 
     handleValidate(value, setErroStyle, props.name);
@@ -134,7 +130,7 @@ const Contact2 = () => {
               rows={5}
               maxLength={256}
               style={descErroStyle}
-              onChange={(e: any) => {
+              onChange={(e: React.FormEvent<HTMLInputElement>) => {
                 const value = event.target.value;
 
                 handleValidate(value, setDescErroStyle, "desc");

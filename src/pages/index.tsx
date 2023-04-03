@@ -33,7 +33,6 @@ const Home: NextPage = () => {
         <Services3 />
         <StatisticsSection />
         <Clients1 />
-        <MemberCard1 />
         <Members1 />
         <Members4 />
         <Member2 />
