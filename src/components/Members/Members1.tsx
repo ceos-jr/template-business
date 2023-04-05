@@ -18,6 +18,16 @@ const members: Member1Type[] = [
     position: "CEO",
     image: ConorImg,
   },
+  {
+    name: "Conor McGregor",
+    position: "CEO",
+    image: ConorImg,
+  },
+  {
+    name: "Conor McGregor",
+    position: "CEO",
+    image: ConorImg,
+  },
 ]
 
 const Members1 = () => {
