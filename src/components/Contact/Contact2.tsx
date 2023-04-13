@@ -1,76 +1,85 @@
-export const Contact2 = () => {
+import { useState } from "react"
+
+const Form = () => {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    number: "",
+    address: "",
+  })
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    try {
+      const resp = await fetch("http://localhost:4000/criar", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+      console.log(resp)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   return (
-    <section className="bg-zinc-900 container grid grid-cols-1 gap-8 place-items-center p-8 py-16 mx-auto md:grid-cols-3">
-      <div className="flex flex-col gap-8 text-white">
-        <h2 className="text-lg font-semibold text-violet-700">Talk To Us</h2>
-        <h1 className="text-3xl">
-          Get a <span className="font-bold text-violet-700">Free</span> Project
-          Evaluation Today!
+    <div className="relative  bg-zinc-900 h-fit w-screen">
+      <div className="pt-16 flex items-center pb-8 justify-center xl:pt-28">
+        <h1 className="text-white font-sans text-3xl font-bold sm:text-5xl">
+          {" "}
+          VOU <span className="text-violet-800">VAZAR</span> SEUS{" "}
+          <span className="text-violet-800">DADOS 😈</span>{" "}
         </h1>
-        <p className="font-light">
-          Tell us about your project and we will evaluate it for free. Our team
-          of experts will provide you with a comprehensive analysis and
-          recommendations.
-        </p>
-        <form>
-          <div className="relative z-0 mb-6 w-full group">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className="floating-input peer"
-              placeholder=" "
-              required
-            />
-            <label htmlFor="email" className="floating-label">
-              Email
-            </label>
-          </div>{" "}
-          <div className="relative z-0 mb-6 w-full group">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              className="floating-input peer"
-              placeholder=" "
-              required
-            />
-            <label htmlFor="name" className="floating-label">
-              Name
-            </label>
-          </div>{" "}
-          <div className="relative z-0 mb-6 w-full group">
-            <input
-              type="tel"
-              name="tel"
-              id="tel"
-              className="floating-input peer"
-              placeholder=" "
-              required
-            />
-            <label htmlFor="tel" className="floating-label">
-              Telephone
-            </label>
-          </div>{" "}
-          <div className="relative z-0 mb-6 w-full group">
-            <textarea
-              name="Feedback (optional)"
-              id="feedback"
-              className="floating-input peer"
-              placeholder=" "
-            />
-            <label htmlFor="message" className="floating-label">
-              Message
-            </label>
-          </div>{" "}
-          <button
-            type="submit"
-            className="py-2 w-full text-sm text-white rounded-full transition-colors bg-violet-700 hover:bg-violet-800"
-          >
-            Submit
-          </button>
-        </form>
       </div>
-    </section>
+      <form
+        className="flex flex-col items-center justify-center"
+        onSubmit={(e) => handleSubmit(e)}
+      >
+        <input
+          type="text"
+          placeholder="Name"
+          className="floating-input peer w-full md:w-2/5 px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-violet-700 focus:bg-white focus:outline-none"
+          onChange={(e) => setData({ ...data, name: e.target.value })}
+        />
+
+        <label htmlFor="name" className="floating-label">
+          Name
+        </label>
+
+        <input
+          type="email"
+          placeholder="saidjr@said.com"
+          className="floating-input peer w-full md:w-2/5 px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-violet-700 focus:bg-white focus:outline-none"
+          onChange={(e) => setData({ ...data, email: e.target.value })}
+        />
+
+        <label htmlFor="email" className="floating-label">
+          Email
+        </label>
+        <input
+          type="tel"
+          placeholder="+55(85)9107-4044"
+          className="floating-input peer w-full md:w-2/5 px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-violet-700 focus:bg-white focus:outline-none"
+          onChange={(e) => setData({ ...data, number: e.target.value })}
+        />
+
+        <input
+          type="text"
+          placeholder="Address"
+          className="floating-input peer w-full md:w-2/5 px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-violet-700 focus:bg-white focus:outline-none"
+          onChange={(e) => setData({ ...data, address: e.target.value })}
+        />
+        <input
+          type="submit"
+          value="Send"
+          className="focus:outline-none mt-5 w-full md:w-40 text-zinc-900 bg-violet-700 focus:bg-violet-900 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+        />
+      </form>
+    </div>
   )
 }
+
+export default Form
